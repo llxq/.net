@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\事件\事件\bin\Debug\事件.exe.config
+C:\Users\Administrator\Desktop\VS\事件\事件\bin\Debug\事件.exe
+C:\Users\Administrator\Desktop\VS\事件\事件\bin\Debug\事件.pdb
+C:\Users\Administrator\Desktop\VS\事件\事件\obj\Debug\事件.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\事件\事件\obj\Debug\事件.Form1.resources
+C:\Users\Administrator\Desktop\VS\事件\事件\obj\Debug\事件.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\事件\事件\obj\Debug\事件.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\事件\事件\obj\Debug\事件.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\事件\事件\obj\Debug\事件.exe
+C:\Users\Administrator\Desktop\VS\事件\事件\obj\Debug\事件.pdb

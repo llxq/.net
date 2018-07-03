@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML文档", "XML文档\XML文档.csproj", "{B10E607E-5AED-46DF-A73B-B874A5BA243C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xml文档添加属性", "xml文档添加属性\xml文档添加属性.csproj", "{7B01B8DA-0CEE-4C2B-9044-29906033129F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "向xml文档追加文档", "向xml文档追加文档\向xml文档追加文档.csproj", "{B7C03B3E-A5EB-42C9-AC74-60C5F7442239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "改变属性的值和读取有属性的xml文档", "改变属性的值和读取有属性的xml文档\改变属性的值和读取有属性的xml文档.csproj", "{5428424D-4DFB-4BD5-8DB8-3D755D65F6A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "删除节点", "删除节点\删除节点.csproj", "{58DE2BC0-01F4-4725-95D5-115C5796E39D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B10E607E-5AED-46DF-A73B-B874A5BA243C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10E607E-5AED-46DF-A73B-B874A5BA243C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10E607E-5AED-46DF-A73B-B874A5BA243C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10E607E-5AED-46DF-A73B-B874A5BA243C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B01B8DA-0CEE-4C2B-9044-29906033129F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B01B8DA-0CEE-4C2B-9044-29906033129F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B01B8DA-0CEE-4C2B-9044-29906033129F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B01B8DA-0CEE-4C2B-9044-29906033129F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C03B3E-A5EB-42C9-AC74-60C5F7442239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C03B3E-A5EB-42C9-AC74-60C5F7442239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C03B3E-A5EB-42C9-AC74-60C5F7442239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C03B3E-A5EB-42C9-AC74-60C5F7442239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5428424D-4DFB-4BD5-8DB8-3D755D65F6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5428424D-4DFB-4BD5-8DB8-3D755D65F6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5428424D-4DFB-4BD5-8DB8-3D755D65F6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5428424D-4DFB-4BD5-8DB8-3D755D65F6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DE2BC0-01F4-4725-95D5-115C5796E39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DE2BC0-01F4-4725-95D5-115C5796E39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DE2BC0-01F4-4725-95D5-115C5796E39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DE2BC0-01F4-4725-95D5-115C5796E39D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1812671B-660C-49EA-B930-60CA81B0ECDD}
+	EndGlobalSection
+EndGlobal

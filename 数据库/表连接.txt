@@ -1,0 +1,13 @@
+表连接分为内连接和外连接
+	内连接(inner join),多表内连接：
+		无论几张表连接,每次执行都是两张表进行连接
+		语法：
+			select * from 表名1 inner join 表名2 on 表名1.列名=表名2.列名
+			如果有两个以上的表的话则继续使用  inner join 连接
+	
+	外连接：
+		right：以左为准
+			select * from 表名1 right join 表名2 on 表名1.列名=表名2.列名
+			
+		left：以右为准
+			select * from 表名1 left	 join 表名2 on 表名1.列名=表名2.列名

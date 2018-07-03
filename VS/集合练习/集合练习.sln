@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "集合练习", "集合练习\集合练习.csproj", "{D2DE31A9-F597-4A23-A920-F9317CCEDEBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "调试", "调试\调试.csproj", "{8ECB9F47-0239-4D58-9770-1B9DA21F195F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2DE31A9-F597-4A23-A920-F9317CCEDEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DE31A9-F597-4A23-A920-F9317CCEDEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DE31A9-F597-4A23-A920-F9317CCEDEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DE31A9-F597-4A23-A920-F9317CCEDEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECB9F47-0239-4D58-9770-1B9DA21F195F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECB9F47-0239-4D58-9770-1B9DA21F195F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECB9F47-0239-4D58-9770-1B9DA21F195F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECB9F47-0239-4D58-9770-1B9DA21F195F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05CF9B0A-C093-4E99-82A8-8B2BEAC02B7E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\线程\线程\bin\Debug\线程.exe.config
+C:\Users\Administrator\Desktop\VS\线程\线程\bin\Debug\线程.exe
+C:\Users\Administrator\Desktop\VS\线程\线程\bin\Debug\线程.pdb
+C:\Users\Administrator\Desktop\VS\线程\线程\obj\Debug\线程.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\线程\线程\obj\Debug\线程.Form1.resources
+C:\Users\Administrator\Desktop\VS\线程\线程\obj\Debug\线程.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\线程\线程\obj\Debug\线程.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\线程\线程\obj\Debug\线程.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\线程\线程\obj\Debug\线程.exe
+C:\Users\Administrator\Desktop\VS\线程\线程\obj\Debug\线程.pdb

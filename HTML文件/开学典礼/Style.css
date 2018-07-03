@@ -1,0 +1,64 @@
+﻿* {
+    margin: 0px auto;
+    font-size: 18px;
+}
+/*这个是整个界面*/
+#divindex {
+    width: 350px;
+    height: 570px;
+    background-color: #F6F6F6;
+    float:right;
+}
+/*这个是上面那个界面*/
+#div1 {
+    width: 350px;
+    height: 60px;
+    background-color: #238AD1;
+}
+    /*这个是设置里面字体的*/
+    #div1 p {
+        font-size: 28px;
+        padding-top: 25px;
+        padding-left: 60px;
+        color: white;
+    }
+
+    /*下面的表格*/
+#tab2 {
+    width: 350px;
+    height: 500px;
+    line-height: 8px;
+}
+.td1 {
+    font-weight: bolder;
+    font-size: 21px;
+}
+.td2 {
+    color: #91ABBE;
+    border-bottom: 1px dashed #C6DCF4;
+}
+.td3 {
+    color: #FF0000;
+    border-bottom: 1px dashed #C6DCF4;
+}
+.td4 {
+    color:blue;
+}
+
+
+
+
+
+/*这个是最上面界面*/
+/*.tab1 {
+    background-color: #228AD2;
+    width: 400px;
+    height: 50px;
+}
+/*这个是设置div下的p标签的字体*/
+/*#td1 p {
+    color: white;
+    padding-top: 20px;
+    padding-left: 60px;
+    font-size: 30px;
+}*/

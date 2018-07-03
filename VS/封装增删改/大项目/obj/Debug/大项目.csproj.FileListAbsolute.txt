@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\bin\Debug\大项目.exe.config
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\bin\Debug\大项目.exe
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\bin\Debug\大项目.pdb
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.Form1.resources
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.exe
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.pdb
+C:\Users\Administrator\Desktop\VS\封装增删改\大项目\obj\Debug\大项目.AddAndUptade.resources

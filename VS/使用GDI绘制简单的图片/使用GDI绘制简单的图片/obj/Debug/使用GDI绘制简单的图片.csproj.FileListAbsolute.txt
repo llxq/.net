@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\bin\Debug\使用GDI绘制简单的图片.exe.config
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\bin\Debug\使用GDI绘制简单的图片.exe
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\bin\Debug\使用GDI绘制简单的图片.pdb
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\obj\Debug\使用GDI绘制简单的图片.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\obj\Debug\使用GDI绘制简单的图片.Form1.resources
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\obj\Debug\使用GDI绘制简单的图片.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\obj\Debug\使用GDI绘制简单的图片.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\obj\Debug\使用GDI绘制简单的图片.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\obj\Debug\使用GDI绘制简单的图片.exe
+C:\Users\Administrator\Desktop\VS\使用GDI绘制简单的图片\使用GDI绘制简单的图片\obj\Debug\使用GDI绘制简单的图片.pdb

@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\VS\XML文档\改变属性的值和读取有属性的xml文档\bin\Debug\改变属性的值和读取有属性的xml文档.exe.config
+C:\Users\Administrator\Desktop\VS\XML文档\改变属性的值和读取有属性的xml文档\bin\Debug\改变属性的值和读取有属性的xml文档.exe
+C:\Users\Administrator\Desktop\VS\XML文档\改变属性的值和读取有属性的xml文档\bin\Debug\改变属性的值和读取有属性的xml文档.pdb
+C:\Users\Administrator\Desktop\VS\XML文档\改变属性的值和读取有属性的xml文档\obj\Debug\改变属性的值和读取有属性的xml文档.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\XML文档\改变属性的值和读取有属性的xml文档\obj\Debug\改变属性的值和读取有属性的xml文档.exe
+C:\Users\Administrator\Desktop\VS\XML文档\改变属性的值和读取有属性的xml文档\obj\Debug\改变属性的值和读取有属性的xml文档.pdb

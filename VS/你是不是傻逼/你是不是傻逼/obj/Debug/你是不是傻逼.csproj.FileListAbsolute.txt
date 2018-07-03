@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\bin\Debug\你是不是傻逼.exe.config
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\bin\Debug\你是不是傻逼.exe
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\bin\Debug\你是不是傻逼.pdb
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\obj\Debug\你是不是傻逼.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\obj\Debug\你是不是傻逼.Form1.resources
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\obj\Debug\你是不是傻逼.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\obj\Debug\你是不是傻逼.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\obj\Debug\你是不是傻逼.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\obj\Debug\你是不是傻逼.exe
+C:\Users\Administrator\Desktop\VS\你是不是傻逼\你是不是傻逼\obj\Debug\你是不是傻逼.pdb

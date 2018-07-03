@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Preson>
+  <Student StudentId="1">
+    <Name>杨洪波</Name>
+    <Age>28</Age>
+    <Gender>女</Gender>
+  </Student>
+  <Student StudentId="2">
+    <Name>刘歧</Name>
+    <Age>29</Age>
+    <Gender>中</Gender>
+  </Student>
+  <Student StudentId="3">
+    <Name>汪磊</Name>
+    <Age>20</Age>
+    <Gender>男</Gender>
+  </Student>
+</Preson>

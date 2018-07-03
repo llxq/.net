@@ -1,0 +1,114 @@
+学习反射之前先了解程序集上
+程序集：(程序的集合)
+	什么是程序集？
+		程序集是.net中的概念
+		.net中dll与exe文件都是程序集。(exe和dll的区别？) dll不能运行(没有Main函数)，exe可以
+		程序集(Assembly),可以看做是一堆相关类打一个包，相当于Java中的jar包(*)
+		
+	程序集包含资源文件，类型元数据(描述在代码中定义的每一类型和成员，二进制形式)。IL代码(这些都被装
+	在exe和dll中)每个程序集都有自己的名称、版本等信息。这些信息可以通过Assemblyinfo.cs文件来定义
+		元数据：在类里面写的所有东西都是元数据
+	
+	使用程序集的好处：
+		程序中只引用必须的程序集，减小程序的尺寸
+		程序集可以封装一些代码，只提供必要的访问接口
+		
+	如何添加程序集的引用：
+		添加路径、项目引用
+		不能循环添加引用
+		演示程序集的使用
+		
+
+		
+		
+反射：
+	概念：通过一个程序集获得程序集中的元数据，这个就是反射
+		  反射就是动态获取程序集的元数据功能
+	
+	Type 类是实现反射的一个重要的类，通过它我们可以获取类中的所有信息包括方法，属性等。可以动态调
+	用类的属性，方法
+	Type是对类的描述。如何获取类中的所有属性？
+	
+	反射就是直接通过.dll来创建对象，调用成员
+	先通过一个普通类介绍Type.(Preson)
+	通过类型元数据来获取对象的一些相关信息，并且还可以实例化对象调用的方法等。这个就叫做"反射"
+	反射让创建对象的方式发生了改变
+	编译器的智能提示就是反射的一个应用
+	
+获取当前exe文档所在的绝对路径：
+	string path=Path.Combine   //这个是连接路径
+	AppDomain.CurrentDomain.BaseDirectory  //这个获取当前exe文档所在的文件夹路径
+	
+Type类的使用
+	通过类获得Type：type t = typeof(Preson)
+	通过对象获得类的Type：Type t =p.GetType("name") 这个p 是preson 的对象	
+	
+1.首先把需要添加的dll文件添加到当前exe文档所在的文件夹下
+2.添加命名空间：using Sysyem.Reflection;
+3.加载程序集：
+	Assembly ass = Assembly.LoadFile("程序集所在的绝对路径");
+4.操作ass
+	ass.GetType("程序集名称.要获得的数据名")：获取当前实例，获取指定的数据
+	ass.GetTypes：能够获取当前程序集中的所有元数据，不管是私有的还是公有的
+	ass.GetExportedTypes：获取程序中的公有类型数据，返回一个集合
+	遍历：
+		item.Name：获取当前程序集中类的名字
+		item.FullName：获取类的全名：命名空间.类名
+		item.Namespace：命名空间
+插件就是扩展主程序功能的dll文件		
+
+
+动态创建对象：
+	有两种方式：
+		1.ass.CreateInstance()
+			会动态调用类的无参构造函数创建一个对象，返回值就是创建的对象，如果类没有无参构造函数就
+			会报错 
+		2.Activator.CreateInstance(Type t,可变参数类型数组)
+			Type t = ass.GetType("数据类型");
+			当这个可变参数类型数组为null时就调用默认的无参的构造函数，如果构造函数有参数，则为这个
+			可变参数类型数组添加数据即可
+			返回一个object类型的变量：比如说 O
+				O.GetType()：获得当前数据的类型
+				O.GetType().GetProperties()：获取当前数据源中的属性,返回一个属性类型数组
+				O.GetType().GetMethods()：获取当前数据源中的方法,返回一个方法类型数组	
+				O.GetType().GetMethod("方法名")：获取当前数据源中的指定方法，返回一个方法类型变量
+				如：mdi   mdi.Invoke("创建的对象 o","参数数组");  //可以执行该方法
+
+动态调用成员
+	Memberinfo类，抽象类，有很多子类，下面讲的类都继承自它，获取程序集成员的相关信息(类型、方法、
+	事件、字段和属性)
+	Propertyinfo：获取属性
+		主要成员：CanRead、CanWrite、PropertyType属性类型：SetValue
+			Getvalue：读取值，设置值，第一个参数是实例对象，因为set、get要针对具体实例，最后一个参
+			数null。pinfo.SetValue(p1,null)
+	Methodinfo：获取方法
+		methodinfo都是和具体对象不相关的，所以需要第一个参数指定要执行的对象
+	Fieidinfo：获取字段
+	Eventinfo：获取事件
+				
+				
+				
+GetConstructor(参数列表)：这个就是获取带参数的构造函数
+	
+Type类的方法：
+	bool IsAssignableFrom(Type c); (直译：是否可以从C赋值)  判断当前的变量类型是不是可以接受C类型
+	变量的赋值
+	typeof(Iplugin).IsAssignableFrom
+	bool IsinstanceOfType(Object o)：判断对象O是否是当前类的实例(当前类可以是o的类、父类、接口)
+	bool IsSubclassOf(Type c);  判断当前类是否是C的子类，类的事，不关接口的事
+	IsAbstract：判断是否为抽象的，含接口
+			
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

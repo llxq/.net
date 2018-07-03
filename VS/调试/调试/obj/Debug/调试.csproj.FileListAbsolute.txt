@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\调试\调试\bin\Debug\调试.exe.config
+C:\Users\Administrator\Desktop\VS\调试\调试\bin\Debug\调试.exe
+C:\Users\Administrator\Desktop\VS\调试\调试\bin\Debug\调试.pdb
+C:\Users\Administrator\Desktop\VS\调试\调试\obj\Debug\调试.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\调试\调试\obj\Debug\调试.Form1.resources
+C:\Users\Administrator\Desktop\VS\调试\调试\obj\Debug\调试.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\调试\调试\obj\Debug\调试.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\调试\调试\obj\Debug\调试.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\调试\调试\obj\Debug\调试.exe
+C:\Users\Administrator\Desktop\VS\调试\调试\obj\Debug\调试.pdb

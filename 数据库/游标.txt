@@ -1,0 +1,38 @@
+游标只有在万不得已的情况下使用
+
+SQL语句是把一个结果集作为一个整体(整个作为一个单元)来操作的,但有时候我们需要针对结果集中的每条记录(
+或某部分记录)进行特殊操作,这时就需要用到游标
+	
+游标是过程化思维,而SQL本身是集合化思维
+
+多数情况下使用查询的性能要比使用游标高效,但并不是任何情况下使用查询都比游标性能要高。(对于及其复杂
+的子查询,则相对游标的性能可能会更高)
+
+@@FETCH_STATUS：全局变量,返回值有三个
+	1	代表FETCH语句成功
+	2	FETCH语句失败或行不在结果集中
+	3	提取的行不存在
+	
+定义一个游标：
+	declare 游标名字 Cursor for
+		select * from 表名
+--打开游标：
+	open 游标名字
+		执行SQL语句
+			declare @username nvarchar(32)
+			declare @userid  int
+			declare @userpwd nvarchar(32)
+			fetch next 游标名字 into @username,@userid,@userpwd   //把游标指向的数据读取出来 放在那三个变量中
+			while(@@FETCH_STATUS=0)
+			begin
+				print @username
+				print @userid
+				print @userpwd
+				//里面还可以添加SQL语句 如：
+					update userinfo set username=@username+1  where userid=@userid
+				fetch next 游标名字 into @username,@userid,@userpwd
+			end
+		
+	close 游标名字			//关闭游标  当然关闭之后我们还可以继续open
+		这里还可以重新打开游标
+	deallocate 游标名字     //释放资源  释放之后就不能再open开了

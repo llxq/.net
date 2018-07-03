@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\bin\Debug\pictue.exe.config
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\bin\Debug\pictue.exe
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\bin\Debug\pictue.pdb
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\obj\Debug\pictue.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\obj\Debug\pictue.Form1.resources
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\obj\Debug\pictue.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\obj\Debug\pictue.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\obj\Debug\pictue.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\obj\Debug\pictue.exe
+C:\Users\Administrator\Desktop\VS\封装增删改\pictue\obj\Debug\pictue.pdb

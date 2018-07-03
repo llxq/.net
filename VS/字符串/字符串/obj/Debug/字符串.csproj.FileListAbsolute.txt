@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\字符串\字符串\obj\Debug\字符串.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\字符串\字符串\obj\Debug\字符串.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\字符串\字符串\bin\Debug\字符串.exe.config
+C:\Users\Administrator\Desktop\VS\字符串\字符串\bin\Debug\字符串.exe
+C:\Users\Administrator\Desktop\VS\字符串\字符串\bin\Debug\字符串.pdb
+C:\Users\Administrator\Desktop\VS\字符串\字符串\obj\Debug\字符串.exe
+C:\Users\Administrator\Desktop\VS\字符串\字符串\obj\Debug\字符串.pdb

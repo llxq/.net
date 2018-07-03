@@ -1,0 +1,8 @@
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\bin\Debug\ProAdd.dll
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\bin\Debug\ProAdd.pdb
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\obj\Debug\ProAdd.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\obj\Debug\ProAdd.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\obj\Debug\ProAdd.dll
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\obj\Debug\ProAdd.pdb
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\bin\Debug\ProOperation.dll
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\ProAdd\bin\Debug\ProOperation.pdb

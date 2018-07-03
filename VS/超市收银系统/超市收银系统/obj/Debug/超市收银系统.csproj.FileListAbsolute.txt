@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\超市收银系统\超市收银系统\obj\Debug\超市收银系统.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\超市收银系统\超市收银系统\obj\Debug\超市收银系统.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\超市收银系统\超市收银系统\bin\Debug\超市收银系统.exe.config
+C:\Users\Administrator\Desktop\VS\超市收银系统\超市收银系统\bin\Debug\超市收银系统.exe
+C:\Users\Administrator\Desktop\VS\超市收银系统\超市收银系统\bin\Debug\超市收银系统.pdb
+C:\Users\Administrator\Desktop\VS\超市收银系统\超市收银系统\obj\Debug\超市收银系统.exe
+C:\Users\Administrator\Desktop\VS\超市收银系统\超市收银系统\obj\Debug\超市收银系统.pdb

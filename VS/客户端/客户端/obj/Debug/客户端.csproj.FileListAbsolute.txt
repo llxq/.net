@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\客户端\客户端\bin\Debug\客户端.exe.config
+C:\Users\Administrator\Desktop\VS\客户端\客户端\bin\Debug\客户端.exe
+C:\Users\Administrator\Desktop\VS\客户端\客户端\bin\Debug\客户端.pdb
+C:\Users\Administrator\Desktop\VS\客户端\客户端\obj\Debug\客户端.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\客户端\客户端\obj\Debug\客户端.Form1.resources
+C:\Users\Administrator\Desktop\VS\客户端\客户端\obj\Debug\客户端.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\客户端\客户端\obj\Debug\客户端.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\客户端\客户端\obj\Debug\客户端.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\客户端\客户端\obj\Debug\客户端.exe
+C:\Users\Administrator\Desktop\VS\客户端\客户端\obj\Debug\客户端.pdb

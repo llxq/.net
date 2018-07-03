@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\bin\Debug\绘制验证码.exe.config
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\bin\Debug\绘制验证码.exe
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\bin\Debug\绘制验证码.pdb
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\obj\Debug\绘制验证码.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\obj\Debug\绘制验证码.Form1.resources
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\obj\Debug\绘制验证码.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\obj\Debug\绘制验证码.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\obj\Debug\绘制验证码.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\obj\Debug\绘制验证码.exe
+C:\Users\Administrator\Desktop\VS\绘制验证码\绘制验证码\obj\Debug\绘制验证码.pdb

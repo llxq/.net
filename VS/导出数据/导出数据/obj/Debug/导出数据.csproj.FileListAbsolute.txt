@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\导出数据\导出数据\obj\Debug\导出数据.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\导出数据\导出数据\obj\Debug\导出数据.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\导出数据\导出数据\bin\Debug\导出数据.exe.config
+C:\Users\Administrator\Desktop\VS\导出数据\导出数据\bin\Debug\导出数据.exe
+C:\Users\Administrator\Desktop\VS\导出数据\导出数据\bin\Debug\导出数据.pdb
+C:\Users\Administrator\Desktop\VS\导出数据\导出数据\obj\Debug\导出数据.exe
+C:\Users\Administrator\Desktop\VS\导出数据\导出数据\obj\Debug\导出数据.pdb

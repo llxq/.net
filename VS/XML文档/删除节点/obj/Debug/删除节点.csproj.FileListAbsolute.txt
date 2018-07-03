@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\XML文档\删除节点\bin\Debug\删除节点.exe.config
+C:\Users\Administrator\Desktop\VS\XML文档\删除节点\bin\Debug\删除节点.exe
+C:\Users\Administrator\Desktop\VS\XML文档\删除节点\bin\Debug\删除节点.pdb
+C:\Users\Administrator\Desktop\VS\XML文档\删除节点\obj\Debug\删除节点.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\XML文档\删除节点\obj\Debug\删除节点.exe
+C:\Users\Administrator\Desktop\VS\XML文档\删除节点\obj\Debug\删除节点.pdb
+C:\Users\Administrator\Desktop\VS\XML文档\删除节点\obj\Debug\删除节点.csprojResolveAssemblyReference.cache

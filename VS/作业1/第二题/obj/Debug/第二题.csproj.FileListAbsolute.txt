@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\作业1\第二题\bin\Debug\第二题.exe.config
+C:\Users\Administrator\Desktop\VS\作业1\第二题\bin\Debug\第二题.exe
+C:\Users\Administrator\Desktop\VS\作业1\第二题\bin\Debug\第二题.pdb
+C:\Users\Administrator\Desktop\VS\作业1\第二题\obj\Debug\第二题.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\作业1\第二题\obj\Debug\第二题.exe
+C:\Users\Administrator\Desktop\VS\作业1\第二题\obj\Debug\第二题.pdb
+C:\Users\Administrator\Desktop\VS\作业1\第二题\obj\Debug\第二题.csprojResolveAssemblyReference.cache

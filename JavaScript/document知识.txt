@@ -1,0 +1,42 @@
+-> 获取元素的方法：
+	-> 方法 document.getElementById('id');   根据id属性的值获取元素的节点
+		-> 根据id获取元素,因为id是惟一的,所以只返回一个dom对象
+	-> 方法 document.getElementsByName('name');	 根据name获取节点列表
+		-> name是可以重复的,所以返回一个dom对象数组
+	-> 方法 document.getElementsByClassName('class名称');	根据class的值获取节点列表
+	-> 方法	document.getElementsByTagName('标签名称');			 								 根据标签名称获取节点列表,可以结合循环得到列表中的每个节点
+	-> dom元素对象.type;	表示<input type="***">中type属性的值
+	
+-> 动态操作节点
+	-> document对象方法 createElement();  动态创建元素
+	-> 元素对象方法 appendChild();  将新元素追加到末尾
+	-> 元素对象方法 insertBefore(新元素对象,原节点);   将新节点插入到某节点前
+	-> 元素对象属性 firstChild：获取第一个元素
+	-> 元素对象属性 childNodes：获取所有子节点元素
+	-> 元素对象属性 removeChild(子元素对象);	删除元素
+
+-> innerText与innerHTML
+	-> 对于<标签名称>....</标签名称>类型的标签,可以使用这两种属性,用于获取或设置标签中的文本
+	-> 属性innerHTML是各种浏览器兼容的,可以读写标签中的HTML标签、纯文本(标签和文本都获取了)
+	-> 属性innerText本身是没有的,现在除了火狐浏览器以外都兼容了,可以读写标签中的纯文本(获取文本)
+	-> 控件拿值 使用value
+		-> 1.textarea(多行文本框)使用value拿值
+		-> 2.select(下拉框)使用value拿值
+	-> 使用：一般使用功能强大的innerHTML,但是为了安全,推荐使用innerText
+	-> 说明：火狐浏览器不支持innerText,而是使用textContent实现相同功能
+
+-> event下的属性：判断当前按的是否是ctrl或者shift等
+	e.shiftKey(类似)
+	
+-> 获得屏幕分辨率：
+	alert(window.screen.width)  //这个是获取屏幕的宽度的分辨率   竖直的是 height
+	
+-> 获取鼠标按下的是那个键：
+	window.event.button  或者：e.button
+
+-> setAttribute:  为元素添加一个属性
+	-> 元素.setAttribute("属性名称","属性的值")
+-> 获取元素属性：
+	-> 元素.getAttributeNode("属性名")
+	
+-> 所有的option的对象都有一个selected属性 可以被转换为true和false

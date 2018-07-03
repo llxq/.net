@@ -1,0 +1,33 @@
+1.防止SQL注入：
+	' or 1=1 --  ：这个就是SQl注入 前面的 ' 就是代表前面的是一个字符串,or 1-1 代表的是恒成立,--则
+	代表注释后面的字符串
+	
+防止SQL注入漏洞攻击的办法：不使用SQL语句拼接,通过参数赋值
+
+参数在SQL Server内部不是简单的字符串替换,SQLServer直接用添加的值进行数据比较,因此不会有注入漏洞攻
+击。(带参数的SQL语句内部是调用了存储过程)
+
+使用查看器查看
+
+SQL Server仅仅支持已命名参数 @arg1,而 Oledb、ODBC 仅支持通用参数标记(?),不同数据提供程序对参数的写
+法可能不同
+
+在数据库中加了 @ 的就是变量
+
+cmd.parameters.Add("参数名",值)   已经过时
+cmd.parameters.AddRange()
+cmd.parameters.AddWithValue("参数名",值)   //麻烦,有多少个就得写多少次
+
+//告诉数据库 我的参数中存的值要以什么类型存到表中
+	Sqlparameters[] ps={new Sqlparameters("参数",System.Data.SqlDbType.类型),new Sqlparameters("参数",System.Data.SqlDbType.类型).......};
+//这个时候声明参数的时候就可以用
+	cmd.parameters.AddRange(ps);
+//把参数用值替换
+	ps[0].Value=值   ps[1].Value=值 ..........
+
+
+用户输入的,那就用参数
+
+StreamWrite 读取数据的时候,可以使用sw.WriteLine("{0},{1}",可以放参数)
+
+

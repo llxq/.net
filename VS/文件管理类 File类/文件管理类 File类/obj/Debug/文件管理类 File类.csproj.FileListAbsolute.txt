@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\文件管理类 File类\文件管理类 File类\bin\Debug\文件管理类 File类.exe.config
+C:\Users\Administrator\Desktop\VS\文件管理类 File类\文件管理类 File类\bin\Debug\文件管理类 File类.exe
+C:\Users\Administrator\Desktop\VS\文件管理类 File类\文件管理类 File类\bin\Debug\文件管理类 File类.pdb
+C:\Users\Administrator\Desktop\VS\文件管理类 File类\文件管理类 File类\obj\Debug\文件管理类 File类.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\文件管理类 File类\文件管理类 File类\obj\Debug\文件管理类 File类.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\文件管理类 File类\文件管理类 File类\obj\Debug\文件管理类 File类.exe
+C:\Users\Administrator\Desktop\VS\文件管理类 File类\文件管理类 File类\obj\Debug\文件管理类 File类.pdb

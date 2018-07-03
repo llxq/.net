@@ -1,0 +1,43 @@
+向xml文档追加文档：
+1.创建XML文档对象
+2.判断指定的xml文档是否存在
+	存在：首先加载xml文档：Loda
+		  然后获取指定xml文档的根节点 使用  documentelement
+		  
+	不存在：则创建第一行，并且新建一个根节点
+3.添加子节点
+
+
+读取xml文档：
+1.创建XML文档对象
+2.加载xml文档
+3.获取文档的根节点：使用  documentelement
+4.获取根节点下的所有子节点：childnodes
+5.遍历这些子节点：使用xmlnode类型(节点类型)
+输出这些文档的innertext文本
+
+读取带有属性的xml文档
+1.创建XML文档对象
+2.加载xml文档
+3.获取指定位置的属性 selectnode("里面填写节点/")
+4.遍历节点：输出的时候使用attribute["属性名字"].value
+
+
+修改属性
+1.创建XML文档对象
+2.加载xml文档
+3.获取指定位置的属性 selectnode("里面填写节点/")
+4.调用setattribute("属性名字","修改之后的值")
+
+在指定位置添加属性
+1.创建XML文档对象
+2.加载xml文档
+3.获取指定位置的属性 selectnode();
+4...百度
+
+删除节点
+1.创建XML文档对象
+2.加载xml文档
+3.首先选中需要删除的节点：selectnode()
+4.调用removeAll()方法即可
+

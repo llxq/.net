@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\记事本\记事本\bin\Debug\记事本.exe.config
+C:\Users\Administrator\Desktop\VS\记事本\记事本\bin\Debug\记事本.exe
+C:\Users\Administrator\Desktop\VS\记事本\记事本\bin\Debug\记事本.pdb
+C:\Users\Administrator\Desktop\VS\记事本\记事本\obj\Debug\记事本.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\记事本\记事本\obj\Debug\记事本.Form1.resources
+C:\Users\Administrator\Desktop\VS\记事本\记事本\obj\Debug\记事本.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\记事本\记事本\obj\Debug\记事本.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\记事本\记事本\obj\Debug\记事本.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\记事本\记事本\obj\Debug\记事本.exe
+C:\Users\Administrator\Desktop\VS\记事本\记事本\obj\Debug\记事本.pdb

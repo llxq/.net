@@ -1,0 +1,10 @@
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\bin\Debug\仿制资源管理器.exe.config
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\bin\Debug\仿制资源管理器.exe
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\bin\Debug\仿制资源管理器.pdb
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\obj\Debug\仿制资源管理器.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\obj\Debug\仿制资源管理器.Form1.resources
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\obj\Debug\仿制资源管理器.Properties.Resources.resources
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\obj\Debug\仿制资源管理器.csproj.GenerateResource.Cache
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\obj\Debug\仿制资源管理器.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\obj\Debug\仿制资源管理器.exe
+C:\Users\Administrator\source\repos\仿制资源管理器\仿制资源管理器\obj\Debug\仿制资源管理器.pdb

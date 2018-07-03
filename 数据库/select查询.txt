@@ -1,0 +1,149 @@
+DBNull.value==read[1]?0:convert.toint32(read[1])   可以解决为Null的问题,如果为null则显示为0
+int? num=null;  在值类型的后面添加一个？则可以赋值为null
+Select查询详解：
+	as  名字     这个就是起别名  可以给列,也可以给表起别名
+	
+	计算结果：
+		select 计算公式  as 可以添加一个列名   //这个as是给列起一个别名
+		select 列名=公式    //这个也可以  效果和上面一样,建议使用上面这种
+		
+	查询的时候把查询出来的列 起一个别名 显示结果
+		select *,列名 as 别名 from 表名
+		
+	查询的时候给表添加一行常量列：
+		select 常量,* from 表名	
+		
+	获取当前日期：select getdate()
+	
+	获取当前数据库的版本信息：select @@version
+		
+函数：在表的可编程性下能找到所有的函数
+		
+一、聚合函数：
+	1.常数：count()
+		select count(*) from 表名     //这个是可以查询表中有几行数据
+		count(*)：找表中最短的列进行统计行数
+		count(1),count(2),count('aaa')：对常数列进行统计行数   //一般就使用 count(1)
+	2.求平均值函数：AVG()
+		select avg(需要求平均值的列名) from  表名
+		select avg(列名1),avg(列名2) from 表名    //可以加as 为列名添加别名
+	3.求和函数：sum()
+		select sum(列名1)  form 表名
+	4.求最大值：max()
+		select max(列名)  form 表名
+	5.求最小值：min()
+		select min(列名)  form 表名
+	6.ABS():
+		取正数
+	
+
+		
+二、Top截取和Order排序
+	1.Top：截取指定多少行数据
+		select top 需要查询几条数据 * from 表名   //但是这种截取是随机的,并不会排序
+		所以一般我们使用top和 order 结合使用：		
+		select top 查询几条数据 * form 表名 order by 表名 desc/asc
+		
+	2.order：排序   asc为升序  desc为降序
+		升序：select * from 表名 order by 根据什么列来升序的列名 asc
+		降序：select * from 表名 order by 列名  desc
+		如果有两个数据相同的话,根据另一个列的数据的大小升序：
+	select * from 表名 order by 列名1 asc,列名2 asc
+
+三、去掉重复的：Distinct
+	Distinct只能紧跟select后面,而且是对后面所有的列都进行去重复操作
+	select  Distinct  列名  from  表名 
+	如果查询的是一列以上的数据,则Distinct只能去掉查询的所有列中都重复的数据
+
+四、where条件过滤：
+	->常见的过滤：select * from 表 where Id>0
+	->多条件过过滤：and(且)	or(或)	not(非)		(优先级：not>and>or)
+	->区间过滤：between	and  和 in
+	
+	->模糊查询：
+		like：
+			%：代表匹配任何多个或一个或零个字符
+			_：代表中匹配一个任意字符,不能匹配零个字符,null也不能匹配
+			''：匹配 ' 的,两个 '' 匹配一个 '
+			[0-9]：代表匹配的字符中包含0-9
+			[a-z]：代表匹配的字符中包含a-z   [A-Z]：这个就是A-Z的
+			[[]：代表匹配的字符包含 [		   也就是说 []  里面放的是关键字符  则转义
+			\[：代表匹配的字符包含 [
+			\ ：这个就是转义符
+			^ ：这个代表当前字符中不存在某个字符
+		not like:
+			代表不包含所匹配的字符
+	   
+	   这个就是查询当前表中以张开头的长度为三个的数据
+		len()	返回当前字段值的长度
+	   select * form  表名  where  列名  like '张%'  and len(列名)=3
+	   与这个是一致的：
+	   select * form 表名 where 列名 like '张_ _'   
+
+五、null的问题：
+	如果想要查询一列的值是包含null的：
+		select * form 表名 where 列名 is null
+	如果想要查询一列的值是不包含null的：
+		select * from 表名 where 列名 is not null 
+
+六、数据进行分组：Group by
+	select 列名 from 表名 group by 列名  ：这个是查询出来的是这个列不重复的数据有多少
+	也可以查询这个分完组每个组的个数：
+		select 列名,count(*) from 表名 group by 列名 
+	如果我们使用了 group by 的话,那么select后面就只能跟着group by后面的列名 或者是聚合函数
+	having：是在分组之后还要进行筛选   having 筛选条件  放在最后面
+
+让两列合并显示：
+	select 列名1+列名2 form 表名
+	
+七、类型转换:
+	->查询：比如把一个字符串和整数进行相加
+	1.Convert类型转换：Convert(目标类型,表达式,格式规范	)
+	2.Cast类型转换：Cast(表达式 as 类型)
+
+八、日期函数：
+	1.Getdata()   //获取当前日期
+	2.dateadd(填写需要添加日或月或年等单位,添加的数量,需要添加的日期)  //为指定日期增加
+		例如为某个日期增加一天：select dateadd(day,1,'2015-3-1')  结果是：2015-3-2
+	3.datetiff(日期单位,开始时间,结束时间)  //计算两个时间之差  结果单位为设置的日期单位
+	4.datepart(日期单位,日期)   //截取这个日期当中所设置的日期单位的值
+		列如：select datepart(year,'2018-1-1')   //结果为2018
+	5.这个方法和datepart 差不多： select 日期单位(日期)   //截取日期
+	
+九、字符串函数的使用：
+	一个空格占两个字节
+	1.select lower(字符串)   将当前字符串转换为小写   这个字符串也可以是一个列
+		select lower(列名) from 表名    将当前列转换为小写
+	2.select ASCII(字符)   获取当前字符的ASCII码值
+	3.select left('需要截取的字符',截取的长度)   //这个是从左边开始数,截取指定字符的指定长度
+	4.select right('需要截取的字符',截取的长度)  //这个是从右边开始数,截取指定字符的指定长度
+	5.select datalength('字符')     //这个是获取当前字符字节长度   如果前面加上 N 则代表两个字节
+	6.select len('字符')    //这个是获取当前字符的字符个数
+	7.select ltrim('字符')   //这个是去掉指定字符前面的空格
+	8.select rtrim('字符')   //这个是去掉指定字符后面的空格
+	
+十、联合结果集 union (集合运算符)
+	集合运算符是对两个集合的操作,两个集合必须具有相同的列数,列具有相同的数据类型(至少能隐式装换),
+	最终输出的集合的列名由集合的列名来确定.(可以用来连接多个结果)
+	要想合并的话,必须是类型相同,或者是可以隐式装换的,合并的话,必须是两个表的列数一样,当然可以选择
+	查询指定列数来联合
+	union 默认是去除重复的
+	union all ：
+		这个是不会去除重复的
+	因为union要进行重复扫描,所以效率低,因此如果不是确定要合并重复行,那么就用 union all
+
+	// 第三种方法并不会覆盖原有数据
+十一、备份：
+	1.把现有表的数据插入到新表(表不能存在),为表建备份,拷贝了表的框架和数据
+	  这个方法只是复制表的框架和数据,但是约束并不会复制
+		select * into 新表名称 from 旧表的名称   //新表在旧表的查询的同时自动建立
+	2.只拷贝表的结构,不拷贝表的数据,效率低
+		select * into 新表名称 from 旧表的名称 where 1<>1
+	3.比上面那个效率要高,只拷贝表的结构,不拷贝表的数据：
+		select top 0 * into 新表名称 from 旧表的名称
+	4.前面三种都是建立在新表不存在的情况下
+	  这个方法是新表已经建立的情况下：列数也要一致
+		insert into 当前表 select * from 旧表
+
+
+	

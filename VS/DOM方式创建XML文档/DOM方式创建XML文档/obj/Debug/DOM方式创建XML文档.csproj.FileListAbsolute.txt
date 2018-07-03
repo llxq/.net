@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\DOM方式创建XML文档\DOM方式创建XML文档\bin\Debug\DOM方式创建XML文档.exe.config
+C:\Users\Administrator\Desktop\VS\DOM方式创建XML文档\DOM方式创建XML文档\bin\Debug\DOM方式创建XML文档.exe
+C:\Users\Administrator\Desktop\VS\DOM方式创建XML文档\DOM方式创建XML文档\bin\Debug\DOM方式创建XML文档.pdb
+C:\Users\Administrator\Desktop\VS\DOM方式创建XML文档\DOM方式创建XML文档\obj\Debug\DOM方式创建XML文档.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\DOM方式创建XML文档\DOM方式创建XML文档\obj\Debug\DOM方式创建XML文档.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\DOM方式创建XML文档\DOM方式创建XML文档\obj\Debug\DOM方式创建XML文档.exe
+C:\Users\Administrator\Desktop\VS\DOM方式创建XML文档\DOM方式创建XML文档\obj\Debug\DOM方式创建XML文档.pdb

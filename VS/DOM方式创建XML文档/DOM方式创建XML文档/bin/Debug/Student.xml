@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preson>
+  <Student StudentId="1">
+    <Name>张三</Name>
+    <Age>20</Age>
+    <Gender>男</Gender>
+  </Student>
+  <Student StudentId="2">
+    <Name>李四</Name>
+    <Age>25</Age>
+    <Gender>男</Gender>
+  </Student>
+  <Student StudentId="3">
+    <Name>王五</Name>
+    <Age>30</Age>
+    <Gender>女</Gender>
+  </Student>
+  <Student StudentId="4">
+    <Name>赵七</Name>
+    <Age>18</Age>
+    <Gender>男</Gender>
+  </Student>
+  <Student StudentId="5">
+    <Name>赵丽</Name>
+    <Age>50</Age>
+    <Gender>女</Gender>
+  </Student>
+</Preson>

@@ -1,0 +1,57 @@
+一、约束详解：
+	->约束的目的：保证数据的完整性。 not null
+	->约束并不是越多越好
+	
+	->默认值约束、可空约束、主键约束、外键约束、唯一键约束、检查约束
+	
+		1.添加默认值约束：
+				注意默认值约束是：DF_需要添加约束的表名_需要添加约束的列名
+						->代码方式给列添加默认值约束：
+						--alter  table 表名 and   constraint  约束的名字   default(0)  for 需要修改的列名
+					
+		2.主键约束(给一个没有主键的列添加一个主键)
+				注意主键约束是：PK_表名_列名
+						->alter  table  表名  add  constraint  约束的名字  primary  key  (列名)
+	
+		3.唯一键约束：
+				注意唯一约束是：UQ_表名_列名
+				其实就是设置这一列的值不能重复
+				->alter  table  表名  constraint  约束名  unique(列名)
+
+		4.检查约束：
+			设置一列的值不能超过一定范围：
+				alter  table  表名 add  constraint  约束名字  check(列名>0 and  列名<9999)
+				
+		5.外键约束：
+			注意外键约束是：FK_表名_字段名
+			把insert和update规范,删除和更新规则设置为 级联,则可以通过删除主键表来删除外键表的数据
+				alter table 主键表表名 add  constraint FK_表名_字段名	foreign	key(设置为外键的
+				列)  references  外键表(外键表的主键)
+		
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

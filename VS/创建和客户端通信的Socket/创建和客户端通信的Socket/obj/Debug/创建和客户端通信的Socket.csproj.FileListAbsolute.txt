@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\bin\Debug\创建和客户端通信的Socket.exe.config
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\bin\Debug\创建和客户端通信的Socket.exe
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\bin\Debug\创建和客户端通信的Socket.pdb
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\obj\Debug\创建和客户端通信的Socket.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\obj\Debug\创建和客户端通信的Socket.Form1.resources
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\obj\Debug\创建和客户端通信的Socket.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\obj\Debug\创建和客户端通信的Socket.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\obj\Debug\创建和客户端通信的Socket.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\obj\Debug\创建和客户端通信的Socket.exe
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\创建和客户端通信的Socket\obj\Debug\创建和客户端通信的Socket.pdb

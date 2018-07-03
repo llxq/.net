@@ -1,0 +1,111 @@
+一般我们使用配置文件来存储我们自己的数据
+配置文件： Appconfig
+	应用程序配置：
+		<appSettigs>
+			<add key="这个就是相当于是键" value="这个就是值" />    //当然也可以添加多个
+		</appSettigs>
+	获取配置文件中Appsettings的数据
+		1.添加引用：system.configuration    configuration:配置的意思  只在WindowsFrom和控制台添加
+		2.configurationManager.AppSettings["key的值"]
+	
+	连接字符串配置文件
+		<connectionString>
+			<add name="键名字" connectionString="连接字符串" />
+		</connectionString>
+	获取连接字符串配置文件
+		1.添加引用：system.configuration    configuration:配置的意思  只在WindowsFrom和控制台添加
+		2.configurationManager.ConnectionStrings["键名字"].connectionString
+
+
+ADO.NET：其实就是一组操作数据的类库
+
+1.connection：用来连接数据库
+
+2.command：用来执行SQL语句
+
+3.Datareader：只读,只进的结果集,一条一条读取数据(streamReader微软的类库中这些Reader的使用方式都差不多)
+
+4.DataAdapter：一个封住了上面3个对象的对象
+
+5.数据集(Dataset)：临时数据库,断开氏数据操作
+
+6.ConnectionStringBuilder：自动生成连接字符串
+
+7.parameter：带参数的SQL语句
+
+8.Transaction：在ADO.NET中使用事物
+
+
+连接字符串：
+	1.Data Source=服务器名称;Initial Catalog=数据库名称;Integrated Security=True; 
+	
+	2.source=服务器名称;user或者usid=sa;pwd=密码;database=数据库名称;
+	
+	通过属性给command赋值：  createcommand()
+		cmd.Connection=连接的 connection
+		cmd.CommandText=SQL语句
+	
+	3.cmd.executenonquery();    //执行一个非查询的SQL语句,返回受影响的行数
+	
+	4.cmd.executeSalar();      //执行一个SQl语句,返回第一行第一列
+	
+	5.判断当前数据库是否打开：
+		con.state==system.data.connectionState.Closed;   //等号后面是一个枚举值
+		
+	//执行这个executereader方法,并且关闭当前的连接对象数,释放资源
+		cmd.ExecuteReader(System.data.CommandBehavior.CloseConnection);  
+	
+	6.添加数据的同时,获取添加的数据的ID列  
+		insert into 列名(这个也可以直接写表的名字) values ();select @@identity;
+		select @@identity;  ：这个就是可以获取ID
+		在数据库中,只要是以 @@ 开头的,则是 全局变量
+			
+	7.读取数据：
+		SQLdataReader read = cmd.ExecuteReader()
+			if(reade.HasRows)  //判断是否有数据(有没有行)
+			{
+				//读取每一行,当读取到最后一行的时候,返回一个false
+				while(reade.Read())
+				{
+					read["列名"]    //读取数据
+				}
+			}
+		数据库中某列的值为 float 的时候,C#中使用double	
+		关于数据库中的null和C#中的null   这两个东西不是一样的
+			DBnull.value=值   //这个可以判断数据库中的数据是否为null
+		bit 类型的数据在 C# 中显示,可以使用枚举
+		Read.nextResult()  //当读取数据的时候,使数据读取器前进到下一行数据中,读取两个表的时候使用
+		
+		read.getname(索引)：获取列名
+		
+		当读取到的数据有可能为空的时候：
+			read["列名'].ToString == DBnull.Value? String.Empty:read["列名"];
+			//意思是：当这列为空的时候,返回一个空字符串,否则把该列的值返回
+		
+	
+stopwatch sw =new stopwatch();
+sw.start();
+sw.stop();
+console.writeline(sw.elapsed.seconds);	       //seconds：以秒为单位
+sw.Reset();    //清零记录的时间
+sw.Restart();    //重新开始计时
+	
+	
+propertygrid：是一个类似于属性界面的控件	
+sqlconnectionStringBuilder  sc = new sqlconnectionStringBuilder();
+sc.UserID="";  //连接所需要的东西也可以手动添加
+this.propertygrid.selectedobject = sc;     //将sc里面的数据展示在这个控件,如果做了修改,也会影响sc
+	
+将一个文本放置在剪切板上：Clipboard.setText("里面放需要放置在剪切板上的字符"),我们应该先清空剪切板  Clipboard.clear();	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

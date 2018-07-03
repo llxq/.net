@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\bin\Debug\客户端4.exe.config
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\bin\Debug\客户端4.exe
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\bin\Debug\客户端4.pdb
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\obj\Debug\客户端4.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\obj\Debug\客户端4.Form1.resources
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\obj\Debug\客户端4.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\obj\Debug\客户端4.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\obj\Debug\客户端4.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\obj\Debug\客户端4.exe
+C:\Users\Administrator\Desktop\VS\创建和客户端通信的Socket\客户端4\obj\Debug\客户端4.pdb

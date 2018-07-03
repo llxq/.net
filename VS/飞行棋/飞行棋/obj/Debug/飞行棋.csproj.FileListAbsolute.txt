@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\飞行棋\飞行棋\bin\Debug\飞行棋.exe.config
+C:\Users\Administrator\Desktop\VS\飞行棋\飞行棋\bin\Debug\飞行棋.exe
+C:\Users\Administrator\Desktop\VS\飞行棋\飞行棋\bin\Debug\飞行棋.pdb
+C:\Users\Administrator\Desktop\VS\飞行棋\飞行棋\obj\Debug\飞行棋.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\飞行棋\飞行棋\obj\Debug\飞行棋.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\飞行棋\飞行棋\obj\Debug\飞行棋.exe
+C:\Users\Administrator\Desktop\VS\飞行棋\飞行棋\obj\Debug\飞行棋.pdb

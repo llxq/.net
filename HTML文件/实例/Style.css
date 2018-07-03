@@ -1,0 +1,190 @@
+﻿* {
+    margin: 0px auto;
+    font-size: 15px;
+}
+
+.body-div {
+    height: 700px;
+    width: 1350px;
+    margin: 0px auto;
+}
+
+.henad-div {
+    background-color: #055C92;
+    height: 40px;
+    width: 1270px;
+    float:left;
+}
+
+.a-color {
+    color: white;
+}
+
+    .a-color a {
+        color: white;
+        text-decoration: none; /*取消超链接的下划线*/
+    }
+
+a:hover {
+    color: blue;
+}
+
+.tb1 {
+    height: 40px;
+    width: 1250px;
+    color: white;
+    padding-left: 10px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#p1 {
+    padding-left: 400px;
+}
+
+.logo-div {
+    height: 110px;
+    width: 1300px;
+    float: left;
+}
+
+.a1 {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo-div {
+    height: 110px;
+    width: 1250px;
+}
+
+.tb2 {
+    height: 110px;
+    width: 1200px;
+    text-align: center;
+}
+
+.img1 {
+    text-align:left;
+}
+
+.text {
+    text-align: left;
+}
+
+.sel {
+    height: 35px;
+    width: 90px;
+    text-align: right;
+}
+
+.button {
+    height: 35px;
+    width: 100px;
+}
+
+.tb3 {
+    height: 400px;
+    width: 200px;
+    color: white;
+    padding-left:20px;
+}
+    .tb3 a {
+        color:white;
+        text-decoration:none;
+
+    }
+a:hover {
+    color:blue;
+}
+
+.left-div {
+    margin-top:150px;
+    height: 400px;
+    width: 230px;
+    position: absolute;
+    margin-left: 30px;
+    background-color: #0A101B;
+}
+
+.right-div {
+    height: 400px;
+    width: 958px;
+    margin-left: 30px;
+    float: left;
+}
+.div4 {
+    height: 400px;
+    width: 230px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 150px;
+    float:left;
+    background-color: green;
+}
+.tb4 {
+    width: 230px;
+    height: 40px;
+    background-color: #055C92;
+}
+    .tb4 th {
+        text-overflow: ellipsis;
+        font-size:20px;
+        overflow:hidden;
+        color:white;
+    }
+
+.divul {
+    width: 230px;
+    height: 360px;
+    background-color: red;
+    float:left;
+}
+.tbul {
+    width: 210px;
+    height: 340px;
+    background-color: #F9F9F9;
+    list-style-type: square;
+    padding: 10px;
+}
+    .tbul li {
+        width: 190px;
+        white-space: nowrap;
+        overflow:hidden;
+        list-style-position: inside;
+        text-overflow: ellipsis;
+        margin-bottom: 28px;
+        text-align:left;
+    }
+    .tbul a {
+        text-decoration: none;
+        color: #333333;
+    }
+a:hover {
+    color: blue;
+}
+.tbdiv {
+    width: 1250px;
+    height: 130px;
+    position:absolute;
+    margin-top:560px;
+    margin-left:30px;
+}
+.divtb {
+    width: 230px;
+    height: 130px;
+    text-align: center;
+    margin:0px;
+}
+    .divtb td {
+        font-size: 13px;
+    }
+.tb5 {
+    width: 1210px;
+    height: 130px;
+    margin:0px;
+    text-align:left;
+}
+
+    

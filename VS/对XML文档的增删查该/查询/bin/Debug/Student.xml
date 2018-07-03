@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preson>
+  <Student StudentID="1">
+    <Name>小青</Name>
+    <Age>20</Age>
+    <Gender>女</Gender>
+  </Student>
+  <Student StudentName="10">
+    <Name>张三</Name>
+    <Age>18</Age>
+    <Gender>女</Gender>
+  </Student>
+  <Student StudentId="5">
+    <Information Name="廖建新" Gender="男" Age="21" />
+  </Student>
+</Preson>

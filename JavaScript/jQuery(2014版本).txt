@@ -1,0 +1,219 @@
+-> jQuery中的顶级对象：
+	->：jQuery中最常用的对象即$对象,要想使用jQuery的方法必须通过$对象。只有将普通的Dom对象封装成为
+		jQuery对象,然后才能调用jQuery中的各种方法
+		
+	-> $是jQuery简写,在代码中可以使用jQuery代替$,但一般大家为了方便都直接写$
+	-> 写注释,后续jQuery代码会越写越多,所以必要的注释一定要写
+	
+-> 页面加载完毕：
+	$(function(){
+		alert('这个时候页面已经加载完毕');
+	})
+	
+-> jQuery中提供了两个函数：
+	-> $map(array,callback(element),arg)  //遍历数组
+		-> 三个参数的解释
+			-> array：填写数组
+			-> callback(element)：回调函数   填写一个匿名方法即可
+				-> function(ele,index)  //ele：代表数组中的元素			index：索引
+			-> arg：该参数可以不写
+		-> 对于数组array中的每个元素,调用callback()函数,最终返回一个新的数组。原数组不变
+		
+	-> $each(array,fn)	//遍历数组,return false来退出循环。遍历键值对
+		-> 参数的解释：
+			-> array：填写数组
+			-> fn：填写一个方法：
+				-> function(k,v)	
+					-> k：索引  //如果是键值对集合的话  这个代表的是 键
+					-> v：值	//这个代表的是值
+		-> 主要用来遍历数组,不修改数组,对于普通数组或"键值对"数组都没问题
+		-> 在each函数中可以直接使用this,表示当前元素的值
+		
+-> jQuery中的trim()
+	-> $.trim('字符串')		//去掉两端空格
+	-> 字符串.replace(/^\s+/,'');
+	-> trimLeft=/^[\s\xAO]+/;		trimRight=/[\s\xAO]/;
+	-> IE一些版本不支持\s空格,\s\xAO也表示空格
+	
+-> jQuery对象、Dom对象
+	-> Dom对象如果想调用jQuery的方法必须先转换为jQuery对象。
+	-> Dom对象：文档树中的对象都是Dom对象。
+	-> jQuery对象：把Dom对象包装后就得到了jQuery对象。
+	-> 如何将Dom对象转换为jQuery对象？Dom->jQuery
+		-> $(Dom对象).text(); 	//就将Dom对象转换为了jQuery对象。
+		-> 不能通过jQuery对象调用Dom对象 	//例如$(Dom对象).innertext="";
+	-> 如何将jQuery对象转换为Dom对象？ jQuery->Dom
+		-> $(Dom对象).get(0).innerHTML='';
+		-> $(Dom对象)[0].innerHTML='';
+		
+	-> 如果直接通过jQuery方式直接获取页面上的元素？(获取之后直接就是一个Dom对象)
+		-> $('#id')、$('span')、$('class')、.....
+		-> 通过jQuery对象即可调用：text()、val()、html()、css('属性','值')
+		-> jQuery中大多都是方法少有属性,因为属性很难链式编程,获取值和设置值都是使用的同一个方法,有
+			参数表示设置值,无参数表示取值。
+		-> text();方法	里面有参数的时候表示设置值,无参数的时候则表示获取该对象的innertext值
+		-> html();方法	不写参数表示获取值,写参数可以写html代码,会直接运行写入的html代码
+		
+	-> 通过jQuery方式直接获取页面上的元素如果想要注册事件,直接把原来的事件的on去掉即可
+		
+-> 链式编程：
+	-> 如果出现断链：end();即可
+		
+-> jQuery选择器：
+	-> 选择器：用于选取页面上的对象元素。jQuery选择器完全继承了css选择器的方式
+	-> jQuery中获取页面元素对象：
+		-> id选择器：$('#id');
+		-> 标签选择器：$('input') 	$('*')：选择页面上的所有元素
+		-> 属性过滤选择器：$('*[name=name]')或者$('[name=name]')
+	-> 标签加类选择器
+		-> $('div .dv')：如果有空格则代表该div里面元素运用了该选择器,不加空格则代表该div外面元素运用了该选择器。
+	-> 多条件选择器：
+		-> $(div,p,span.cls)：设置div,p标签和具有cls样式的span标签	[将每个选择器匹配到的结果合并
+							到一起]。
+		-> 层次选择器：
+			-> 后代：$('div li')：获取div下的所有li元素
+			-> 子元素：$('div>li')：获取div下的直接li子元素[必须是直接子元素]
+			-> 相邻元素1：$('cls+div')：获取样式名为cls之后的相邻的(紧接着的)第一个div元素(不常用)
+				等同于$('cls').next('div');如果相邻的元素不是div的话,则不会继续向后找
+			-> 相邻元素2：$('cls~div')：获取样式名为cls之后所有的兄弟div,等同于$('cls').nextAll('d
+							iv)  [nextAll(*)或nextAll()表示后面的所有元素]
+			-> $(*)：选取所有的元素
+			-> 注意：选择器表达式中的空格不能多不能少。易错！过滤器与表单选择器时注意
+			
+	-> 基本过滤选择器：	
+		-> :first	选取第一个元素。$('div:first') 选取第一个div
+		-> :last	选取最后一个元素。$('div:last') 选取最后一个div
+		-> :not(选择器)	选取不满足'选择器'条件的元素
+			$('input:not(mvclass)') 选取样式名不是mvclass的<input>
+		-> :even、:odd	选取索引是偶数,奇数的元素	$('input:even')	选取索引是奇数的<input>
+		-> :eq(索引序号)、gt(索引序号)、:lt(索引序号) 选取索引等于,大于,小于索引序号的元素
+		-> $(':header') 选取所有的h1......h6元素
+		-> $('div:animated') 选取正在执行动画的<div>元素
+	
+	-> 属性过滤器：
+		-> $('div[id]') 选取有id属性的<div>
+		-> $('div[title=test]')	选取title属性为'test'的div	jquery没有对getElementByName进行封装,用$('
+			input[name=abc]')
+		-> $('div[title!=test]')	获取title属性不为test的<div>
+		-> 还可以选择开头[name^=值],结束[name$=值],包含[name*=值]等,条件还可以复合 如[[属性1=a][]...]
+		
+	-> 表单对象属性选择器(过滤器)：
+		-> $('#from1:enabled')	选取id为from1的表单内的所有启用的元素
+		-> $('#from1:disabled')	选取id为from1的表单内的所有禁用的元素
+			-> 有空格表示的是 该表单中内部被禁用的元素
+			-> 没有空格表示的是 被禁用的表单 
+		-> $('#input :checked')	选取所有选中的元素(radio,checkBox),这个中间要加空格
+		-> $('select:selected')	选取所有选中的选项元素(下拉列表)
+		
+	-> 其他过滤器：
+		-> $(':input')	选取所有的<input>,<textarea>,<select>和<button>元素。和$('input)不一样,
+			$('input')只获得<input>
+		-> $(':text')	选取所有的单行文本框,等价于$('input[type=text]')
+		-> $(':password')	选取所有的密码框
+		-> 同理还有：:radion,:checkBox,:submit,:image,:reset,:button,:file,:hidden
+		-> 代替了$('input[type=***]')
+		-> :hidden	获取所有不可见元素
+		-> ：visiable  获取所有可见的元素
+		
+	-> 内容过滤器：
+		-> :contains(text)	过滤出包含给定文本的元素  (innerText中包含。)
+		-> :empty()	过滤出所有不包含子元素或者文本元素的空元素
+		-> :has(selector) 过滤出元素中包含(即子元素)selector选择器能选择到的元素
+		-> :parent 过滤出可以当做父元素的元素(即该元素有子元素或者元素中包含文本)
+	
+	-> 子元素过滤器：
+		-> first-child与first的区别,first只能选取第一个,而first-child则能选取每个子元素的第一个
+		-> last-child
+		-> only-child	匹配当前父元素中只有一个子元素的元素
+		-> nth-child	对比eq()来理解,eq()只匹配一个,nth-child()为每个父元素都要匹配一个子元素
+			-> :nth-child(index)	index从1开始
+			-> :nth-child(even)
+			-> :nth-child(odd)
+			-> :nth-child(3n)	选取3的倍数的元素
+			-> :nth-child(3n+1)	满足3的倍数+1的元素
+		-> :children()方法,只考虑子元素,不考虑后代元素 	
+		
+-> 添加切换和移除样式：
+	-> addclss()：添加样式
+	-> removeclass()：移除样式    //如果括号里面不填写样式的话,则是移除所有样式
+	-> toggleClass()：切换样式
+	
+-> 几个常用方法：
+	-> next();	//当前元素之后的紧邻着的第一个兄弟元素(下一个)
+	-> nextAll();	//当前元素之后的所有的兄弟元素
+	-> prev();	//当前元素之前的紧邻着的兄弟元素(上一个)
+	-> prevAll();	//当前元素之前的所有兄弟元素
+	-> siblings();	//当前元素的所有兄弟元素
+
+-> 元素的each：
+	-> jQuery元素也可以调用each方法,只是对$.each的简化调用。return false终止循环
+	-> 数组.each(function(index,ele));
+	-> val();	获取该元素的value的值
+	
+-> jQuery中的Dom操作
+	-> 使用html()方法读取或设置元素的innerHTML;
+	-> 使用text()方法读取或设置元素的innerText;
+	-> 使用attr()方法读取或设置元素的属性,对于jQuery没有封装的属性(所有浏览器没有差异的属性)操作
+		-> attr(name,value)	一般写两个值,属性和属性值,代表设置该属性是该值,如果只写了一个属性,那么
+			就是获取该属性的值
+	-> 使用removeAll删除属性。删除的属性在源代码中看不到,这是和清空属性的区别
+	-> 动态创建元素：
+		-> 比如创建一个a标签：加到body里面
+			-> 第一个方法：
+				-> $('<a href="http://www.baidu.com"></a>').text('百度').appendTo($('body'));
+			-> 第二个方法：
+				-> var aObj=$('<a href="http://www.baidu.com"></a>')
+					$('body').append(aObj);
+					
+-> 其他事件：
+	-> jQuery的事件对象：event对象
+		-> 属性：pageX、pageY、target获得触发事件的元素(冒泡的起始点和this不一样,相当于window.even
+			t.srcElement(触发事件的元素))、which如果是鼠标事件获得按键(1左键、2右键、3中键),如果是
+			键盘事件keydown则获取的是keyCode(每个键代表一个数字)
+	-> altKey、shiftKey、ctrlKey获得alt、shift、ctrl是否按下,为bool值
+	-> 移除事件绑定：unbind()方法即可移除元素上所有绑定的事件,如果UNbind('click')则只移除click事件
+		的绑定。bind+=;bind-=;
+	-> 一次性事件：如果绑定的事件只想执行一次随后立即unbind可以使用	one()方法进行事件绑定
+	-> e.type获取当前事件的类型
+	-> $(this).offset()		获取当前元素相对于页面的坐标
+	-> $(this).offset().left、$(this).offset().top
+	-> event.originalElemnt		获取原生的event对象
+	
+-> 动画：
+	-> show()、hide()方法显示、隐藏元素。用togale(时间)方法在显示、隐藏之间切换
+	-> 如果show、hide方法不带参数则是立即显示、立即隐藏,如果指定速度参数则会用指定时间进行动态显示
+		隐藏,单位为毫秒,也可以使用三个内置速度  fst(200毫秒)、normal(400毫秒)、slow(600毫秒),在
+		jQuery动画函数中需要速度的地方一般也可以使用这个三个值
+	-> 滑动效果
+		-> slideDown()、slideUp()、slideToggle()隐藏就显示,显示就隐藏
+	-> 淡入淡出
+		-> fadeln()、fadeOut()、fadeToggle()同上、fadeTo()到达透明度为多少
+	-> 自定义动画
+		-> animate({样式},时间);
+			-> 只能对数字类型的样式设置动画
+			-> 使用链式编程,可以将多个动画拼接起来
+		-> 使用animate设置对象位置的时候要确保position的值为absolute或relative
+		-> 停止动画正在执行动画的元素 stop(),带参数的stop(true,false);
+			-> 如果不传递参数,表示停止当前动画,后续动画会继续执行
+			-> 传递参数true,表示停止当前动画,并且清除所有的动画队列
+		-> 动画队列：animate().animate().animate()......
+		-> 选择器':animated',选择正在执行动画的元素
+			$(':animated').stop()：停止当前动画,继续执行下面的动画
+			$(':animated').stop(true)：停止所有动画
+		-> fadeTo：动画到指定的透明效果  fadeTo(时间,opacity) 
+		-> opacity：指定不透明度 0~1
+		-> 可以在动画函数中传递一个callback,表示动画完成后在每个元素上执行此函数
+		
+-> 阻止事件冒泡：stopPropagation();	
+
+-> jQuery插件：jQuery cookie
+	-> 什么是cookie：cookie就是保存在浏览器上的内容,用户在这次浏览页面的时候向cookie中保存文本内容
+		下次再访问页面的时候就可以取出来上次保存的内容,这样就可以得到上次"记忆"的内容。cookie不是
+		jQuery中特有的概念,只不过jQueryCookie把它简化的更好而已。cookie就是存储在浏览器上的数据
+	-> cookie需要浏览器的支持,浏览器的cookie是可以禁用的,如果禁用了cookie就不能使用了,不过一般不用
+		考虑禁用cookie的情况
+	-> $.cookie('键','值');
+	
+-> 使用js dom对象可以让字体高亮显示
+	-> setSelectionRange(indexStart,indexEnd)方法实现
+		-> indexStart表示开始位置,indexEnd表示结束位置  不包含indexEnd位置字符

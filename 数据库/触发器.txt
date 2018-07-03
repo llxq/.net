@@ -1,0 +1,98 @@
+插入数据并且返回id的值
+	insert into 表名(列名) output inserted.id  values(插入的值)  //可以返回当前列的id的值
+
+触发器的作用：
+	自动化操作,减少了手动操作以及出错的几率
+	
+触发器是一种特殊类型的存储过程,他不同于前面介绍过的一般的存储过程。(在SQL内部把触发器看作是存储过程
+但是不能传递参数)
+
+一般的存储过程通过存储过程名称被直接调用,而触发器主要是通过事件进行触发而被执行
+
+触发器是一个功能强大的工具,在表中数据发生变化时自动强制转换。触发器可以用于SQL Server约束、默认值和
+规则的完整性检查,还可以完成难以用普通约束实现的复杂功能
+
+那何为触发器？
+	在SQL Server里面也就是对某一个表的一定的操作,触发某种条件,从而执行的一段程序。触发器是一个特殊
+	的存储过程
+	
+当我们在执行delete的时候 数据并不是真的删除了,而是放在了一个deleted表中
+当我们在执行insert的时候 数据先放进inserted表中
+当我们在执行update的时候 先把原来的数据放在deleted表中,然后再在inserted表中插入修改之后的数据,最后
+在我们的表中插入数
+	
+	
+inserted表和deleted表：
+	inserted表与deleted表是干什么的？
+		inserted表包含新数据：
+			insert、update触发器会用到 
+			inserted这个表只会存放我们当前插入的数据,之前的会被当前存放的数据覆盖
+
+		deleted表包含旧数据：
+			delete、update触发器会用到
+			删除表的时候也是只会保存当前删除的数据,会把之前的数据覆盖
+
+for|after  后面接的都是执行的操作之后  insert、delete、update 再执行下面的语句
+			
+After触发器：
+	1.在语句执行完毕之后触发
+	2.按语句触发,而不是所影响的行数,无论所影响的行数为多少,只触发一次。
+	3.只能建立在常规表上,不能建立在视图和临时表上
+	4.可以递归触发,最高可达32级
+	5.update(列),在update语句触发时,判断某列是否被更新,返回布尔值。
+	
+inserted of触发器
+	1.用来替换原本的操作
+	2.不会递归触发
+	3.可以在约束被检查之前触发
+	4.可以建在表和视图上
+	
+insered of：
+	--inserted of 触发器
+	--当我们执行删除操作的时候,将删除操作替换为我们指定的操作
+	--当执行删除操作的时候,将变为update,将删除标识变为1
+		create trigger TR_UserInfo_Delete on userinfo
+		instead of delete
+		as
+		begin
+			declare @id int
+			select @id=userid from deleted
+			update UserInfo set DelFlag=1 where UserInfo.UserID=@id
+		end
+
+	
+触发器的删除语法：
+	--删除触发器
+	--每当删除一条数据,都会在把删除的那条数据插入到我们的新表中
+	create trigger ts_deleteUserInfo on UserInfo
+	after delete
+	as
+	begin
+	insert into NewUserInfo select * from deleted
+	end
+	--删除数据的时候就触发了触发器,之后执行触发器的内容
+	delete from UserInfo where UserID=7
+	
+	--插入触发器,如果插入成功就在newuserinfo这个表中加上插入的数据,否则删除刚刚插入的数据
+	--exists是指如果括号里面的数据存在则返回true否则false	
+	create trigger tr_insertUserInfo on UserInfo
+	after insert
+	as
+	begin
+		declare @uid int,@UserName nvarchar(64)
+		select @uid=UserID,@UserName=UserName from inserted
+		if exists(select * from UserInfo where UserName=@UserName)
+		begin
+			insert into NewUserInfo select * from inserted
+		end
+		else
+		begin
+			delete from UserInfo where UserName=@UserName
+		end
+	end
+
+触发器的使用建议：
+	1.尽量避免在触发器中执行耗时操作,因为触发器会与SQL语句处于同一个事务中(事务没有结束就无法释放)
+	2.避免在触发器中做复杂操作,影响触发器性能的因素比较多(比如：产品版本、所使用架构等等),要想编写
+	  高效的触发器考虑因素比较多
+	3.触发器编写的时候注意对多行触发时的处理(一般不建议使用游标,性能问题)

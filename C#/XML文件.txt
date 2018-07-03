@@ -1,0 +1,73 @@
+xml基础
+	可扩展的标记语言(extensible Markup language)
+	
+	什么是xml,学习有什么用。优点：容易读懂：格式标准 任何语言都内置了XML分析引擎，不用单独进行文件
+	分析引擎的编写
+	
+	→XML语法规范：标签(Tag)，嵌套(Nest)，属性。标签要闭合，属性值要用""包围，标签可以互相嵌套
+				  大小写敏感(CaseSensitive)
+				  XML树，父节点，子节点，兄弟节点(siblings)
+				  XML和HTML的区别：XML中元素必须关闭！XML中的属性值必须用引号"" 。
+				  HTML：超文本标记语言
+				  
+
+XML中XmlElement和XMLNodes的区别
+		Xml节点有多种类型：属性节点，注释节点，文本节点，元素节点等
+		Xml元素：元素节点。继承自XMlNOde
+		InnerText和InnerXml
+				  
+
+XML：可扩展的标记语言
+XML是用来存储数据的，可以看成是一个小型的数据库
+
+这不是.Net的技术，是一个单独的技术
+
+XML文件是自己定义标签名字
+
+注意：
+1.XML是严格区分大小写的
+2.XML的标签是成对出现的
+3.XML文档有且只有一个根节点
+
+
+//我们创建XML文档的时候，保存的时候里面必须要有一个根节点
+通过代码来添加一个XML文档
+创建XML  DOM(文档对象模型)
+1.引入命名空间：using system.xml
+
+2.创建XML文档对象，我们读，写，追加用的都是XML文档对象
+-XMldocument：创建对象，比如说创建了一个doc
+
+3.创建第一行描述信息，并且添加到创建的xml文档中
+XmlDeclaration dec = doc.createXmlDeclaration("这个是文档版本","文档编码","第三个可以填写为null")
+再将第一行添加到XML文档中：dc.AppendChild(需要添加的元素)
+
+//了解元素和节点
+doc.createElement：这个是创建元素
+doc.createNode：这个是创建根节点
+元素：XML里面所有标签都是元素
+节点：所有元素都是节点
+
+节点包含元素！！！！
+
+4.创建根节点，对于XML文档来说就是一个根节点
+XMLElement xe = doc.createElement("填写需要添加的根节点的名称")
+再添加到xml文档中：dc.AppendChild(xe);
+
+5.给根节点创建子节点
+xmlElement xee = doc.createElement("子节点名称")
+再将这个子节点添加到需要添加的根节点下面
+
+给标签内部添加文本，比如说上面这个根节点
+xee.innerText="需要添加的文本";
+
+innertext和innerXml区别：
+innerXMl：当我们添加一个标签的时候，他会处理成为一个标签
+innertext：处理成为一个字符串，"<" 这个用转义字符处理
+
+6.保存xml文档
+doc.save("xml文档的名称.xml")
+
+
+如何给节点添加属性 比如说我给xee添加属性：
+xee.setAttribute("属性的名称","属性的值")

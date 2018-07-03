@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "委托", "委托\委托.csproj", "{7D7596D7-BD51-4E70-904D-A1FC62A6C1DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛型委托和lamda表达式", "泛型委托\泛型委托和lamda表达式.csproj", "{97DFA79A-A644-43FE-835F-E265744E5D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "使用委托在窗体间传值", "使用委托在窗体间传值\使用委托在窗体间传值.csproj", "{0B8045B1-EA23-4C89-BEBB-2BE3C1D3AA4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多播委托", "多播委托\多播委托.csproj", "{409E6F31-BA29-4C34-9186-2A74076189F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D7596D7-BD51-4E70-904D-A1FC62A6C1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7596D7-BD51-4E70-904D-A1FC62A6C1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7596D7-BD51-4E70-904D-A1FC62A6C1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7596D7-BD51-4E70-904D-A1FC62A6C1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DFA79A-A644-43FE-835F-E265744E5D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DFA79A-A644-43FE-835F-E265744E5D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DFA79A-A644-43FE-835F-E265744E5D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DFA79A-A644-43FE-835F-E265744E5D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8045B1-EA23-4C89-BEBB-2BE3C1D3AA4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8045B1-EA23-4C89-BEBB-2BE3C1D3AA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8045B1-EA23-4C89-BEBB-2BE3C1D3AA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8045B1-EA23-4C89-BEBB-2BE3C1D3AA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409E6F31-BA29-4C34-9186-2A74076189F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409E6F31-BA29-4C34-9186-2A74076189F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409E6F31-BA29-4C34-9186-2A74076189F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409E6F31-BA29-4C34-9186-2A74076189F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4B2BF41-CB41-408C-93C5-B21F5557270B}
+	EndGlobalSection
+EndGlobal

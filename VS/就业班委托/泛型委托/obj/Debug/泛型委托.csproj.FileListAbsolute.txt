@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\VS\就业班委托\泛型委托\bin\Debug\泛型委托.exe.config
+C:\Users\Administrator\Desktop\VS\就业班委托\泛型委托\bin\Debug\泛型委托.exe
+C:\Users\Administrator\Desktop\VS\就业班委托\泛型委托\bin\Debug\泛型委托.pdb
+C:\Users\Administrator\Desktop\VS\就业班委托\泛型委托\obj\Debug\泛型委托.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\就业班委托\泛型委托\obj\Debug\泛型委托.exe
+C:\Users\Administrator\Desktop\VS\就业班委托\泛型委托\obj\Debug\泛型委托.pdb

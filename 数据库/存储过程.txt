@@ -1,0 +1,143 @@
+存储过程---就像数据库中运行方法(函数)
+
+ceiling()函数：可以向上提1   也就是说3.1变成位4这样的
+
+和C#里的方法一样,由存储过程名/存储过程参数组成/可以有返回结果
+
+之前的if/else/where变量/insert/select等,都可以在存储过程中使用
+
+优点：
+	1.执行速度更快--在数据库中保存的存储过程语句都是编译过的
+	2.允许模块化程序设计--类似方法的复用
+	3.提高系统的安全性--防止SQL注入
+	4.减少网络流通量--只需要传输存储过程的名称
+	
+系统存储过程：
+	1.由系统定义,存放在master数据库中
+	2.名称由"sp_"开头或"xp_"开头,  自定义的存储过程可以以 usp_  开头
+	
+自定义存储过程：
+	由用户在自己的数据库中创建的存储过程 usp
+	
+	执行的时候可以省去 exec
+					系统存储过程
+		系统存储过程					说明
+		sp_database				列出服务器上的所有数据库		执行语句：exec sp_database
+		sp_helpdb				报告有关指定数据库或所有数据库的信息
+		sp_renamedb				更改数据库的名称
+		sp_tables				返回当前数据库下所有可查询的列表,其实就是查询当前数据库下的所有表
+		sp_columns				返回某个表的列的信息
+		sp_help					查看某个表的所有信息
+		sp_helpconstraint		查看某个表的约束
+		sp_helpindex			查看某个表的索引
+		sp_stored_nrocedures	列出当前环境中的所有存储过程
+		sp_password				添加或修改登录账户的密码
+		sp_helptext				显示默认值、未加密的存储过程、用户定义的存储过程、触发器或视图的实
+								际文本	(可以查看某个存储过程的详细信息,忘记写存储过程可以查看此)
+	
+当我们使用 OUTPUT 的时候,传参的时候也需要加上 OUTPUT 例题：
+	CREATE PROC usp_TowNumberSub
+	@num1 INT,
+	@num2 INT,
+	@result INT OUTPUT
+	AS
+	BEGIN
+		SET @result=@num1-@num2
+	END
+
+	DECLARE @result int
+	EXEC usp_TowNumberSub 12,11,@result OUTPUT
+	SELECT @result
+	
+自定义存储过程的语法：[]可以省去
+	CREATE	PROC[EDURE]	 	存储过程名
+	@参数1	数据类型 = 默认值	OUTPUT,      //可以不赋默认值,后面那个OUTPUT也可以省略
+	@参数2	数据类型 = 默认值	OUTPUT		//OUTPUT相当于是C#中的OUT参数,返回该值
+	AS
+		SQL语句
+
+--删除存储过程
+drop proc usp_TwoNumberAdd
+
+		
+参数说明：
+	1.参数可选
+	2.参数分为输入参数、输出参数
+	3.输入参数允许有默认值
+	
+存储过程传参数方法：
+	1.declare	@参数1 int=值 ,@参数2	int=值
+	  exec  存储过程名	@存储过程参数1=@参数1 ,	@存储过程参数2=@参数2
+	2.直接传参：
+		exec 存储过程名 1,2				这个1和2就是代表上面参数1的值和参数2的值
+		
+		
+使用ADO.NET执行存储过程,并且输出一个参数
+	SQL语句直接赋值为 存储过程名称即可,不需要加上exec
+	当需要输出一个参数的时候,也是就output的时候
+		//创建一个输出参数：
+			sqlparameter ps = new sqlparameter();
+			ps.parameterName="填写有一个变量名称";
+			ps.SQLDBType=SQLDB.int;		//设置变量类型
+		//设置参数是输出方向
+			ps.Direction=parameterDirection.output;
+			cmd.add(ps);
+		//执行存储过程命令
+			cmd.CommandType = CommandTy.StoredProcedure
+		//获取输出参数
+			ps.value  //这个就是输出参数,返回一个值
+			
+sqlhelp改进：
+		添加一个参数 CommandType 即可
+	publ static int ExecuteNonQuery(string str,CommandType commanddtype,params SqlParameter[] ps)
+
+		
+如何判断一个存储过程是否存在：
+	if exists(select * from sys.all_object where name="一个存储过程的名称") 
+	begin
+		drop proc 存储过程名称		//如果存在则删除,不存在则没事
+	end
+
+	
+动态创建存储过程：
+	declare @name nvarchar(max)
+	set @name = 'select * from userinfo'
+	exec sp_execute @name
+	
+	
+函数：
+	创建函数：
+		标量函数(返回普通的参数的函数)
+			语法：
+				create function 函数名(参数列表)   --FUN_开头的函数名
+					returns 返回值类型
+				as
+				begin
+					方法体
+					returns @变量  --返回数据,要和上面的返回值类型一致
+				end	
+标量函数例子：
+	--把年龄大于当前传过来的值的条数返回
+	create function FUN_Getuser(@userAge int)
+	returns int
+	as
+	begin
+		declare @result int
+		set @result=(select count(*) from UserInfo where UserAge>@userAge)
+		returns @result
+	end
+	
+	表值函数：
+		create function 函数名(参数和参数类型)
+		returns table   --返回值是一个表
+		as
+		returns  返回一个表作为值
+		
+		
+表值函数例子：
+	create function FUN_UserInfo_GetUserAge(@userAge int)
+	returns table
+	as
+		returns (select * from UserInfo where UserAge>@userAge)
+	
+使用：select * from FUN_UserInfo_GetUserAge(10)  --查询年龄大于10的数据

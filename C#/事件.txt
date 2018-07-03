@@ -1,0 +1,33 @@
+事件：
+语法：
+	访问修饰符 event 委托名称 事件名称；
+	事件声明在类下面
+	
+定义事件：
+	public delegate void delTest();
+	public event eventTest; //声明事件不需要写();
+	
+注册事件(可以给一个事件注册多个方法)
+	eventTest += new delTest(method1);
+	eventTest += new delTest(method2);
+
+自定义事件的基础：
+	1.当一个结果发生时,有可能引起另外的一些反应,这就好像因果关系,而事件,则是这个因与果的内部联系
+	2.在C#中，我们经常看到
+	private void button1_Click(object sender,EventArgs e)
+	{
+		...........//代码片段
+	}
+	上面是一个按钮的单击事件。
+	从上面我们可以看到三个事件因素：
+		1.对象：button1
+		2.事件名称：Click
+		3.参数：object sender,其实就是button，eventargs e是事件需要的资源数据
+		sender就是触发这个事件的对象
+		e就是执行这个事件所需要的数据职员
+	
+执行事件必须要有方法去触发这个事件
+
+委托本质上就是一个类型！
+事件的本质就是一个类型安全的委托！
+事件就是保护委托的   就相当于是属性保护字段，因为委托在哪里都可以访问，不安全！！

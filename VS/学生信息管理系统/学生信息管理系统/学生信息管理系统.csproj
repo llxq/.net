@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B238FCD8-50A1-403C-98AD-E925FCA0DC65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>学生信息管理系统</RootNamespace>
+    <AssemblyName>学生信息管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutcs.Designer.cs">
+      <DependentUpon>aboutcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flmlogin.Designer.cs">
+      <DependentUpon>flmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsqlmangesource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsqlmangesource.Designer.cs">
+      <DependentUpon>formsqlmangesource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqimangestu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsqimangestu.Designer.cs">
+      <DependentUpon>frmsqimangestu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqladdcouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsqladdcouse.Designer.cs">
+      <DependentUpon>frmsqladdcouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqladdsource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsqladdsource.Designer.cs">
+      <DependentUpon>frmsqladdsource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqladdstu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsqladdstu.Designer.cs">
+      <DependentUpon>frmsqladdstu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqleditcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsqleditcourse.Designer.cs">
+      <DependentUpon>frmsqleditcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqleditstu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsqleditstu.Designer.cs">
+      <DependentUpon>frmsqleditstu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsqlmangcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsqlmangcourse.Designer.cs">
+      <DependentUpon>frmsqlmangcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="aboutcs.resx">
+      <DependentUpon>aboutcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flmlogin.resx">
+      <DependentUpon>flmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsqlmangesource.resx">
+      <DependentUpon>formsqlmangesource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsqimangestu.resx">
+      <DependentUpon>frmsqimangestu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsqladdcouse.resx">
+      <DependentUpon>frmsqladdcouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsqladdsource.resx">
+      <DependentUpon>frmsqladdsource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsqladdstu.resx">
+      <DependentUpon>frmsqladdstu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsqleditcourse.resx">
+      <DependentUpon>frmsqleditcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsqleditstu.resx">
+      <DependentUpon>frmsqleditstu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsqlmangcourse.resx">
+      <DependentUpon>frmsqlmangcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

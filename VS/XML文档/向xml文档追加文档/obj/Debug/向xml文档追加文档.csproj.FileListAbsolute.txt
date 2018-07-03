@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\XML文档\向xml文档追加文档\bin\Debug\向xml文档追加文档.exe.config
+C:\Users\Administrator\Desktop\VS\XML文档\向xml文档追加文档\bin\Debug\向xml文档追加文档.exe
+C:\Users\Administrator\Desktop\VS\XML文档\向xml文档追加文档\bin\Debug\向xml文档追加文档.pdb
+C:\Users\Administrator\Desktop\VS\XML文档\向xml文档追加文档\obj\Debug\向xml文档追加文档.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\XML文档\向xml文档追加文档\obj\Debug\向xml文档追加文档.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\XML文档\向xml文档追加文档\obj\Debug\向xml文档追加文档.exe
+C:\Users\Administrator\Desktop\VS\XML文档\向xml文档追加文档\obj\Debug\向xml文档追加文档.pdb

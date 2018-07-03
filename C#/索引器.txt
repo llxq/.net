@@ -1,0 +1,11 @@
+索引器：
+例子：
+在一个类中有一个集合字段
+private int[] _number=new int[10];
+//索引器
+public int this[int index]
+{
+	get{return _number[index];}
+	set{_number[index]=value;}
+}
+

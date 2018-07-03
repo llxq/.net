@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\VS\集合练习\调试\bin\Debug\调试.exe.config
+C:\Users\Administrator\Desktop\VS\集合练习\调试\bin\Debug\调试.exe
+C:\Users\Administrator\Desktop\VS\集合练习\调试\bin\Debug\调试.pdb
+C:\Users\Administrator\Desktop\VS\集合练习\调试\obj\Debug\调试.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\集合练习\调试\obj\Debug\调试.exe
+C:\Users\Administrator\Desktop\VS\集合练习\调试\obj\Debug\调试.pdb

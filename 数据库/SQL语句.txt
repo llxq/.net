@@ -1,0 +1,131 @@
+	脚本：一般就是指比较简单的，不需要编译的可以直接解析执行的语言，常见的比如：SQL，JavaScript等
+
+SQL语句入门(脚本、命令)
+	SQL全名是结构化查询语言(Structured Query Language)，是关系数据库管理系统的标准语言
+	SQL语句是和DBMS“交谈”专用的语句，不同DBMS都认SQL语法。
+	(*)SQL主要分为DDL(数据定义语言,建表,建库等语句。)
+		DML(数据操作语言)和DLL(数据库控制语言)。Create Table、Drop Table、Alter Table等属于DDL,
+		select、inser、Update、Delete等属于DML，GRANT授权、REVOKE取消授权属于DCL
+		
+crud：增删查改
+		
+在T-SQL中 所有的字符串都是单引号的
+
+getdate()  获取当前日期
+		
+一般我们使用T-SQL语句的话,等号使用   <>  
+		
+T-SQL语句：
+	use 打开的数据库
+	1.创建数据库,[]可以不加  一般不加:
+		Create database 数据库名字	
+	2.删除一个数据库：
+		drop database 数据库名字
+	3.新建表格：
+		create table 表名
+		(
+			列名 int primary key not null,   //设置为主键,不允许为空 
+			列名 nvarchar(32) null     //添加字段  可以为空
+			列名 int default(默认的值) not null  //这个添加字段,添加默认值,默认值为括号里面的值
+		)
+		id int identity(1,1) primary key not null  自动增长,从1开始,自增为1
+	
+	4.基本查询：
+		select * from dbo.表名   // dbo：架构
+		查询指定条件数据：
+			select * from dbo.表名 where 条件  
+		多个条件加 and   并且的条件用 or 
+	
+	5.插入数据：
+		 insert into 表名(列名1,列名2......) values(列值1,列值2......)  //如果值是中文  N'值' N代表
+		 insert  into 表名  values(里面依次输入列的值即可 用逗号隔开)   //不推荐使用
+		当我们插入多行数据的时候、使用此方法：
+				insert	into	'列名1、列名2.....'
+				select	'值1','值2'.....  union
+				select	'值1','值2'.....  union
+				select	'值1','值2'.....            //最后一个可以不需要写 union
+				...........
+		这个字符是Unicode
+		当一个表中有自动增长的主键的时候,插入数据的时候不需要设置主键的值,他会自动增长
+		
+	6.删除	
+		这个是删除数据：
+			delete from 表名  where 条件   //删除指定条件的数据
+			delete from 表名 where 1=1  //删除整个表的数据   (几乎很少用,delete之前需要备份数据库,删除之后需要通过日志文件恢复)	
+			
+		这个是把字段(列)也删除了：
+			drop table 条件 
+		
+		这个是删除数据,表还在：   这个可以让ID 从1开始
+			truncate  table 表名
+		truncate和delete的区别：
+			1.truncate语句非常高效。由于truncate操作采用按最小方式来记录日志,所以效率非常高。对于
+			  数百万条数据使用truncate删除需要几秒钟,而delete则可能需要几个小时
+			2.truncate语句会把表中的自动编号重置为默认值。
+			3.truncate不触发delete触发器 (其实就是：delete删除可以恢复  但是truncate则不能恢复)
+			
+			
+	
+	7.修改：
+		update 表名 set 需要修改的列名=修改之后的值 where 条件	
+		update 表名 set 列1=值,列2=值
+		update 表名 set 列1=值 where 条件列	in (1,2,3)  //这个就是当条件列等于1或者2或者3时执行
+	
+二、添加列、修改列、删除列
+	1.给表格添加一列：
+		如果我们要添加的字符串是关键字  则给他加上一个 [  ] 即可
+		->语法：
+			alter table  表名  add  列名  类型  not null 
+	
+	
+	2.数据库的表删除一个列：
+			->我们删除一个列的时候必须把他的约束删除
+				删除语法：alter  table 表名  drop  constraint  约束名字
+				alter table 表名 drop  column 列名
+	
+	3.修改一个列：
+		->alter  table  表名  alter  column  列名  字段类型  null
+	
+	
+	
+在DLl中：
+	创建：create
+	删除：drop
+	修改：alter
+	
+通过CMD命令查询数据
+	1.sqlcmd
+	2.use	数据库名称
+	3.go   提交之前的代码
+	4.查询语句  dbo.表名
+	5.go   提交代码
+	
+	创建数据库：
+		[create database 数据库名字 
+			on
+			(
+				name='数据库名字'  size=5MB  filegrow=2MB(超出时增长的大小) filename='路径\.mdf'    
+			)
+			log on
+			(
+				name='数据库名字_log'  size=1MB  filegrow=2MB(超出时增长的大小) filename='路径_log
+				\.ldf'		
+			)]   不需要记
+			
+SQL语句中字符串用单引号、单等号
+select*、select*
+	SQL语句是大小写不敏感的,不敏感指的是SQL关键字,字符串值还是大小写敏感的
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\obj\Debug\封装2.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\obj\Debug\封装2.Form1.resources
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\obj\Debug\封装2.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\obj\Debug\封装2.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\obj\Debug\封装2.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\bin\Debug\封装2.exe.config
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\bin\Debug\封装2.exe
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\bin\Debug\封装2.pdb
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\obj\Debug\封装2.exe
+C:\Users\Administrator\Desktop\VS\封装增删改\封装2\obj\Debug\封装2.pdb

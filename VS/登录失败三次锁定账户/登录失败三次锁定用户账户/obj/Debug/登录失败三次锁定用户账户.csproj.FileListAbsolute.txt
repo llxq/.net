@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\bin\Debug\登录失败三次锁定用户账户.exe.config
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\bin\Debug\登录失败三次锁定用户账户.exe
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\bin\Debug\登录失败三次锁定用户账户.pdb
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\obj\Debug\登录失败三次锁定用户账户.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\obj\Debug\登录失败三次锁定用户账户.Form1.resources
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\obj\Debug\登录失败三次锁定用户账户.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\obj\Debug\登录失败三次锁定用户账户.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\obj\Debug\登录失败三次锁定用户账户.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\obj\Debug\登录失败三次锁定用户账户.exe
+C:\Users\Administrator\Desktop\VS\登录失败三次锁定账户\登录失败三次锁定用户账户\obj\Debug\登录失败三次锁定用户账户.pdb

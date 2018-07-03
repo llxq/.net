@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\bin\Debug\使用反射制作计算器.exe.config
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\bin\Debug\使用反射制作计算器.exe
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\bin\Debug\使用反射制作计算器.pdb
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\obj\Debug\使用反射制作计算器.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\obj\Debug\使用反射制作计算器.Form1.resources
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\obj\Debug\使用反射制作计算器.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\obj\Debug\使用反射制作计算器.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\obj\Debug\使用反射制作计算器.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\obj\Debug\使用反射制作计算器.exe
+C:\Users\Administrator\Desktop\VS\使用反射制作计算器\使用反射制作计算器\obj\Debug\使用反射制作计算器.pdb

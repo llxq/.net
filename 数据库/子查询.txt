@@ -1,0 +1,56 @@
+子查询：
+	把一个查询结果作为一个表来使用,就是子查询
+		select T.* from
+			(select * from UserInfo where UserPwd>100) as T
+				where T.UserID=2
+	把一个查询结果作为一个表达式进行使用就是子查询
+		select * from UserInfo
+			where UserPwd in
+				(select UserPwd from UserInfo group by UserPwd having UserPwd>300)
+		
+over()：开窗函数,就是可以把聚合函数的查询结果作为列使用		
+	其实就是按照括号里面的列来进行编号
+rank()：在排名的时候可以使用,当成绩一样的时候,名次也一样 相当于是这样：1,2,2,2,5,5,7,8,9,10  排名
+
+partition by 列名  ：分区函数,可以让这一列名字相同的进行排序   如：
+	select id,商品名称,行号=ROW_NUMBER() over(partition by 商品名称 order by id) from 表名
+				
+ceiling()函数：可以向上提1   也就是说3.1变成位4这样的
+				
+分页SQL语句
+	Row_Number函数的分页使用
+	双Order排序 分页法 (越过多少条,取多少条数据)
+
+	第一种分页写法：
+		--查询第二页,取二条数据
+		--括号外面的就是取二条数据,里面的是越过	 (第几页-1)*一页几条数据  条数据
+		--就是查询userid不在那几条的数据   也就是越过的集合
+			select top 2 * from UserInfo where UserID not in 
+				(
+					select top((2-1)*2) UserID from UserInfo order by UserID
+				)
+			order by UserID
+				
+	第二种分页写法：
+		--使用 row_Number() 函数来进行分页
+		-- Row_Number() 函数可以帮助我们 取行号
+		--取第二页 的两条数据  每一页两条数据
+			select * from 
+				(
+					select *,ROW_NUMBER() over(order by UserId) as number from UserInfo 
+				) as T
+			where T.number between ((2-1)*2+1) and (2*2)	//这个是取第二页,一页两条数据
+		
+exists(条件)：返回一个bool值,true则执行该语句,false则不执行
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				
+				

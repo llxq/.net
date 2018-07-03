@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\bin\Debug\my first WondowsFrom demo.exe.config
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\bin\Debug\my first WondowsFrom demo.exe
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\bin\Debug\my first WondowsFrom demo.pdb
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\obj\Debug\my first WondowsFrom demo.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\obj\Debug\my_first_WondowsFrom_demo.Form1.resources
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\obj\Debug\my_first_WondowsFrom_demo.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\obj\Debug\my first WondowsFrom demo.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\obj\Debug\my first WondowsFrom demo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\obj\Debug\my first WondowsFrom demo.exe
+C:\Users\Administrator\Desktop\VS\my first WondowsFrom demo\my first WondowsFrom demo\obj\Debug\my first WondowsFrom demo.pdb

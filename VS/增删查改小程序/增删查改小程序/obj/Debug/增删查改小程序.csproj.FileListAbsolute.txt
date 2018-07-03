@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\bin\Debug\增删查改小程序.exe.config
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\bin\Debug\增删查改小程序.exe
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\bin\Debug\增删查改小程序.pdb
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\obj\Debug\增删查改小程序.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\obj\Debug\增删查改小程序.Form1.resources
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\obj\Debug\增删查改小程序.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\obj\Debug\增删查改小程序.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\obj\Debug\增删查改小程序.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\obj\Debug\增删查改小程序.exe
+C:\Users\Administrator\Desktop\VS\增删查改小程序\增删查改小程序\obj\Debug\增删查改小程序.pdb

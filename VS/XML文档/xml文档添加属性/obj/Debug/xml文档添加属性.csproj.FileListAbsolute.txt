@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\VS\XML文档\xml文档添加属性\bin\Debug\xml文档添加属性.exe.config
+C:\Users\Administrator\Desktop\VS\XML文档\xml文档添加属性\bin\Debug\xml文档添加属性.exe
+C:\Users\Administrator\Desktop\VS\XML文档\xml文档添加属性\bin\Debug\xml文档添加属性.pdb
+C:\Users\Administrator\Desktop\VS\XML文档\xml文档添加属性\obj\Debug\xml文档添加属性.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\XML文档\xml文档添加属性\obj\Debug\xml文档添加属性.exe
+C:\Users\Administrator\Desktop\VS\XML文档\xml文档添加属性\obj\Debug\xml文档添加属性.pdb

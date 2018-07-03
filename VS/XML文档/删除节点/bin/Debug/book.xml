@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<books>
+  <book>
+    <name>水浒传</name>
+    <count>100</count>
+  </book>
+  <storybook>
+  </storybook>
+  <count>100</count>
+</books>

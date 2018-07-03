@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "创建和客户端通信的Socket", "创建和客户端通信的Socket\创建和客户端通信的Socket.csproj", "{5FCBB10A-12B3-4592-A998-96124557D3E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "客户端4", "客户端4\客户端4.csproj", "{0499578C-BE3F-45A3-956E-25EECFEA4CB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FCBB10A-12B3-4592-A998-96124557D3E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCBB10A-12B3-4592-A998-96124557D3E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCBB10A-12B3-4592-A998-96124557D3E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCBB10A-12B3-4592-A998-96124557D3E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0499578C-BE3F-45A3-956E-25EECFEA4CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0499578C-BE3F-45A3-956E-25EECFEA4CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0499578C-BE3F-45A3-956E-25EECFEA4CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0499578C-BE3F-45A3-956E-25EECFEA4CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7119816E-319D-4BE7-9CA9-353FFEF963BE}
+	EndGlobalSection
+EndGlobal

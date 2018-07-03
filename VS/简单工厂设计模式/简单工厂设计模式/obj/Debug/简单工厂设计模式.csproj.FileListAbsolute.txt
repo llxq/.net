@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\简单工厂设计模式\简单工厂设计模式\bin\Debug\简单工厂设计模式.exe.config
+C:\Users\Administrator\Desktop\VS\简单工厂设计模式\简单工厂设计模式\bin\Debug\简单工厂设计模式.exe
+C:\Users\Administrator\Desktop\VS\简单工厂设计模式\简单工厂设计模式\bin\Debug\简单工厂设计模式.pdb
+C:\Users\Administrator\Desktop\VS\简单工厂设计模式\简单工厂设计模式\obj\Debug\简单工厂设计模式.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\简单工厂设计模式\简单工厂设计模式\obj\Debug\简单工厂设计模式.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\简单工厂设计模式\简单工厂设计模式\obj\Debug\简单工厂设计模式.exe
+C:\Users\Administrator\Desktop\VS\简单工厂设计模式\简单工厂设计模式\obj\Debug\简单工厂设计模式.pdb

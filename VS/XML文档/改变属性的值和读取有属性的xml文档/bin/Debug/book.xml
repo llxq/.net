@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<books>
+  <book>
+    <storybook name="三国演义" count="100" 水浒传="三国演义" />
+  </book>
+</books>

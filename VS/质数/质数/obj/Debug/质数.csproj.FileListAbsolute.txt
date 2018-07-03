@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\质数\质数\bin\Debug\质数.exe.config
+C:\Users\Administrator\Desktop\VS\质数\质数\bin\Debug\质数.exe
+C:\Users\Administrator\Desktop\VS\质数\质数\bin\Debug\质数.pdb
+C:\Users\Administrator\Desktop\VS\质数\质数\obj\Debug\质数.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\质数\质数\obj\Debug\质数.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\质数\质数\obj\Debug\质数.exe
+C:\Users\Administrator\Desktop\VS\质数\质数\obj\Debug\质数.pdb

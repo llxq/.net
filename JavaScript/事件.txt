@@ -1,0 +1,58 @@
+-> dom对象事件注册：
+	-> dom内部提供了很多个事件可以使用 (更多参考帮助文档：html dom event对象)
+	-> 示例事件：onclick
+	-> 注册方式一：直接在元素上注册
+	-> 注册方式二：动态注册
+	-> 注意：注册代码必须在文档对象加载完成后
+	-> 提问：使用哪种方式好呢？
+	-> 答：第二种方式,代码分离,更规范
+	
+-> 加载事件：
+	-> 事件onload：当所有节点及节点的内容加载完成后,会触发此事件
+	-> window.onload：当页面中所有的元素被加载完成后,会触发此事件
+	
+-> for循环能对数组进行读写,而forin只能对数组读取,但是并不能写
+
+-> 属性：事件
+	-> 事件的一个参数,类似于winForm中的eventArgs e,当事件被触发时附加一些信息
+	-> 事件不局限于window对象的事件,所有元素的事件都可以通过event属性取到相关信息
+	-> 示例：创建按钮,在单击处理函数中查看event
+	-> 对于 IE、Chrome都支持这个属性,当时ff不支持,需要为方法提供参数,名称任意
+	-> 可以通过event对象的检查来区分浏览器,实现能力检测
+
+-> 复制,黏贴事件：
+	-> 复制事件：oncopy
+	-> 黏贴事件：onpaste
+	-> 让复制的内容添加上一段文本：
+		-> cilpboardData对象,对粘贴板操作   //只支持ie
+			-> setData("text",需要添加的值)  设置粘贴板中的值    //这个text是代表是文本的意思
+			-> getData("text")  读取粘贴板的值,返回值为黏贴的内容
+			-> clearData("text")  清空剪切板
+			-> 我们需要添加一个定时器,过0.1秒或者几秒之后拿到粘贴板的值,并且添加 就使用setData
+			
+-> 事件冒泡：
+	-> 如果元素A嵌套在元素B中,那么A被点击不仅A的onclick事件会被触发,B的onclick也会被触发。触发的顺
+		序是"由内而外"。
+	-> 取消事件冒泡：window.event.cancelBubble=true  //ie写法
+
+-> window.event.srcElement ：
+	-> srcElement就是事件源,就是记住第一次触发这个事件的对象
+	-> 阻止事件冒泡：window.event.cancelBubble=true;  //就是不会触发之前的事件,执行完改事件就结束
+	
+-> 为span设置display 必须先设置width和height才会有效
+
+-> window的onload和body的onload
+	-> 二者效果完全一样,都是在页面内容加载完之后才触发。
+	-> 由于网页中没有window所以在body中写onload
+	-> 建议使用window.onload	//使用js脚本的方式高效
+	-> 其实应该是document.onload,但是所有浏览器都实现到了window对象
+	
+-> 事件中的this
+	-> 事件中的this,除了可以使用event.srcElement在事件响应函数中,this表示发生事件的控件。只有在事
+		件响应函数才能使用this获得发生事件的控件,在事件响应函数调用的函数中不能使用(这里的this表示
+		window对象),如果要使用则要将this传递给函数或者event.srcElement。(*)this和evnet.srcElement
+		的语义是不一样的,this就是表示当前监听事件的这个对象,event.srcElement是引发事件的对象
+		
+-> onKeydown ：键盘按下某个键
+	-> 判断按下的是某个键：
+		-> window.event.keycode    //获取按下的是那个键,返回的是数字

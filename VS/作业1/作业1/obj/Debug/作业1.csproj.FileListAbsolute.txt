@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\作业1\作业1\bin\Debug\作业1.exe.config
+C:\Users\Administrator\Desktop\VS\作业1\作业1\bin\Debug\作业1.exe
+C:\Users\Administrator\Desktop\VS\作业1\作业1\bin\Debug\作业1.pdb
+C:\Users\Administrator\Desktop\VS\作业1\作业1\obj\Debug\作业1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\作业1\作业1\obj\Debug\作业1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\作业1\作业1\obj\Debug\作业1.exe
+C:\Users\Administrator\Desktop\VS\作业1\作业1\obj\Debug\作业1.pdb

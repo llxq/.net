@@ -1,0 +1,103 @@
+case函数的用法：(相当于是switch case)
+	数学成绩=
+	(
+		case 列名
+			when 值 then '自定义的值'
+			when 值 then '自定义的值'
+			....
+			else '自定义的值'
+	)
+	
+	或者是：
+	(
+		case 
+			when 列名满足什么条件  then '自定义的值'
+			when 列名满足什么条件  then '自定义的值'
+			....
+			else '自定义的值'
+	)
+	
+注意：then返回的数据类型要一致,就是自定义的值的类型要一致
+	
+	
+ISNULL(表达式,替换的值) 函数	：最好别用
+	select CreateDate,ISNULL(CreateDate,getday())  	//如果createdate的日期为null则用当前日期代替
+	注意,这个是返回一个新的列
+	
+	
+SQL控制语句：	
+	select是在消息输出,print是在结果输出  如果直接输出select @i+1则是当前值+1,但是@i的值仍然是不变
+	select以表格的方式输出,可以同时输出多个变量
+	print以文本的方式输出,一次只能输出一个变量的值
+	定义变量：declare 关键字	所有的变量都是用@来定义的
+		declare  @i  int   		//定义一个变量i,int类型
+	给变量赋值：
+		set @i=9		//给这个变量赋值为9
+	输出变量：
+		print @i		//打印i的值
+	计算表的行数并给变量赋值：
+		set @i=(select count(1)	from 表名)
+		print @i
+	select @i=99	//select也可以给变量赋值
+	print @i
+	计算表的行数也可以这样写：
+		select @i = count(1) from 表名   输出即可
+		
+变量：
+	局部变量：	declare @i int=0 , @a int=0;  //定义一个int类型的变量 i 和 a 初始值为0
+		局部变量必须以标记	@	作为前缀   如@i @age
+		局部变量：先声明,再赋值
+	全局变量：
+		全局变量必须以标记	@@	作为前缀  如@@i
+		全局变量由系统定义和维护,我们只能读取,不能修改全局变量的值
+		
+IF ELSE语法：
+	表达式：
+		if(表达式)
+		begin
+			SQL语句
+		end
+		else 		//当然也可以继续else if()
+		begin
+			SQL语句
+		end
+	
+WHILE语法： 可以使用break 和 continue
+	语法：
+		while(表达式)
+		begin
+			SQL语句
+		end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

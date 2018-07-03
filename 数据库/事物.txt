@@ -1,0 +1,88 @@
+什么是事务？
+	事务是恢复和并发控制的基本单位
+	事务应该具有四个属性：原子性、一致性、隔离性、持续性 这四个属性通常被称为 ACDI 特性
+		原子性：一个事务是一个不可分割的工作单位,事务中包括的诸操作要么都执行,要么都不执行
+		一致性：事务必须是使数据库从一个一致性状态变到另一个一致性状态,一致性与原子性是密切相关的
+		隔离性：一个事务的执行不能被其他事务干扰,即一个事务的内部的操作及使用的数据对并发的其他事
+				务是隔离的,并发执行的各个事务之间不能相互干扰
+		持久性：持续性也称持久性,指一个事务一旦提交他对数据库中的数据的改变就应该是永久的,接下来的
+				其他操作或故障不应该对其有任何影响
+	
+	事务：同生共死
+	1.是指访问并可能更新数据库中各种数据项的一个程序执行单元(unit)---也就是由多个SQL语句组成,必须作
+	为一个整体执行
+	2.这些SQL语句作为一个整体一起向系统提交,要么都执行,要么都不执行
+	
+事务语法步骤：	transaction可以简写为 tran
+	开始事务：begin transaction
+	事务提交：commit transaction
+	事务回滚：rollback transaction
+	
+事务可以搭配 try catch使用
+	begin try
+		begin transaction  --开始事务
+			执行SQL语句...
+			SQL语句....
+		commit transaction  --提交事务
+	end try
+	begin catch
+		rollback transaction --如果出现异常,则回滚事务
+	end catch
+	
+	
+ADO.NET的实现事务：
+	第一种写法：
+		try
+		{
+			sqltransaction  tran = con.Begintransqction();   --开始事务
+			SQL语句
+			cmd.Transaction = tran;
+			cmd	执行语句		
+			tran.Commit()  --提交事务
+		}
+		catch
+		{
+			tran.Rollback();  --如果出现错误,事务回滚
+		}
+	
+	第二种写法：
+		1.添加引用：System.Transaction
+		try
+		{
+			using(TransactionScope scope = new Transactionscope())
+			{
+				using(sqlconnection ccon =new sqlconnection(连接字符串))
+				{
+					string str = "需要执行的语句";
+					using(sqlcommand cmd = new sqlcommand(sql,con))
+					{
+						con.open();
+						cmd.ExecuteNonQuery();
+					}
+				}
+				scope.Comlete();   //提交事务,如果出现异常则自动回滚
+			}
+		}
+		catch
+		{
+			//发生异常执行的语句
+		}
+		
+		
+例子：
+	BEGIN TRANSACTION			  --开始事务
+	declare @sumError int=0       --定义一个变量,用来记录是否发生错误
+	update 表名 set	列名=值	where 条件
+	set @sumError=@sumError+@@ERROR     --@@ERROR：可以用来记录发生错误时的消息的值
+	update 表名 set 列名=值 where 条件
+	set @sumError=@sumError+@@ERROR
+	if(@sumError<>0)				--判断用来记录的变量是否等于0   <>：表示不等于
+	begin
+		--失败了
+		ROLLBACK TRANSACTION     --事务回滚
+	end
+	else
+	begin
+		--成功了
+		COMMIT TRANSACTION     	 --提交事务
+	end

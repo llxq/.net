@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\VS\对XML文档的增删查该\对XML文档的增删查该\bin\Debug\对XML文档的增删查该.exe.config
+C:\Users\Administrator\Desktop\VS\对XML文档的增删查该\对XML文档的增删查该\bin\Debug\对XML文档的增删查该.exe
+C:\Users\Administrator\Desktop\VS\对XML文档的增删查该\对XML文档的增删查该\bin\Debug\对XML文档的增删查该.pdb
+C:\Users\Administrator\Desktop\VS\对XML文档的增删查该\对XML文档的增删查该\obj\Debug\对XML文档的增删查该.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\对XML文档的增删查该\对XML文档的增删查该\obj\Debug\对XML文档的增删查该.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\VS\对XML文档的增删查该\对XML文档的增删查该\obj\Debug\对XML文档的增删查该.exe
+C:\Users\Administrator\Desktop\VS\对XML文档的增删查该\对XML文档的增删查该\obj\Debug\对XML文档的增删查该.pdb
